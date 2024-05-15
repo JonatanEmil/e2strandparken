@@ -5,19 +5,30 @@ require "settings/init.php";
 <html lang="da">
 <head>
 	<meta charset="utf-8">
-	
+
 	<title>Hotel Strandparken</title>
-	
+
 	<meta name="robots" content="All">
 	<meta name="author" content="Udgiver">
 	<meta name="copyright" content="Information om copyright">
-	
+
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
-	
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+
+<div class="row">
+    <div class="col-6">
+
+
+    </div>
+    <div class="col-6">
+
+    </div>
+</div>
+
 <div class="row g-2">
 	<?php
 	$produkter = $db->sql("SELECT * FROM produkter");
