@@ -21,8 +21,9 @@ require "settings/init.php";
 
 <div class="row">
     <div class="col-6">
-
-
+        <div class="col-4 fs-1 text-end">
+            <span id="todayTemp">0</span> <span>&#8451;</span>
+        </div>
     </div>
     <div class="col-6">
 
@@ -31,7 +32,7 @@ require "settings/init.php";
 
 <div class="row g-2">
 	<?php
-	$produkter = $db->sql("SELECT * FROM produkter");
+	$produkter = $db->sql("SELECT * FROM test");
 	foreach($produkter as $produkt) {
 		?>
 		<div class="col-12 col-md-6">
@@ -59,5 +60,6 @@ require "settings/init.php";
 </div>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="vejr.js"></script>
 </body>
 </html>
