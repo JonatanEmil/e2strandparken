@@ -14,6 +14,7 @@ $custom-colors: (
 				"navbar": #346C4B,
 				"kasse":#5B9874,
 				"text":#4D5655,
+				"hvid":#ffff,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
