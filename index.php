@@ -26,38 +26,39 @@ require "settings/init.php";
         </div>
     </div>
     <div class="col-6">
+        <div class="row g-2">
+            <?php
+            $produkter = $db->sql("SELECT * FROM diamanter");
+            foreach($produkter as $produkt) {
+                ?>
+                <div class="col-12 col-md-6">
+                    <div class="card w-100">
+                        <div class="card-header">
+                            <?php
+                            echo $produkt->diamantNavn;
+                            ?>
+                        </div>
+                        <div class="card-body">
+                            <?php
+                            // Indsæt andet felt fra database
+                            ?>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <?php
+                            // Indsæt andet felt fra database
+                            ?>
+                        </div>
+                    </div>
+                </div>
+                <?php
+            }
+            ?>
+        </div>
 
     </div>
 </div>
 
-<div class="row g-2">
-	<?php
-	$produkter = $db->sql("SELECT * FROM test");
-	foreach($produkter as $produkt) {
-		?>
-		<div class="col-12 col-md-6">
-			<div class="card w-100">
-				<div class="card-header">
-					<?php
-					echo $produkt->prodNavn;
-					?>
-				</div>
-				<div class="card-body">
-					<?php
-					// Indsæt andet felt fra database
-					?>
-				</div>
-				<div class="card-footer text-muted">
-					<?php
-					// Indsæt andet felt fra database
-					?>
-				</div>
-			</div>
-		</div>
-		<?php
-	}
-	?>
-</div>
+
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="vejr.js"></script>
