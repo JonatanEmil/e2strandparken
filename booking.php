@@ -17,36 +17,23 @@ require "settings/init.php";
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
-<div class="row g-2">
-    <?php
-    $produkter = $db->sql("SELECT * FROM diamanter");
-    foreach($produkter as $produkt) {
-        ?>
-        <div class="col-12 col-md-6">
-            <div class="card w-100">
-                <div class="card-header">
-                    <?php
-                    echo $produkt->diamantNavn;
-                    ?>
-                </div>
-                <div class="card-body">
-                    <?php
-                    // Indsæt andet felt fra database
-                    ?>
-                </div>
-                <div class="card-footer text-muted">
-                    <?php
-                    // Indsæt andet felt fra database
-                    ?>
-                </div>
-            </div>
-        </div>
-        <?php
-    }
-    ?>
-</div>
+<body class="bg-baggrund">
 
+<div class="container">
+<div class="row g-2">
+  <div class="col-6">
+      <div>
+          <div>
+              <p>Hej mit navn er nanna</p>
+
+          </div>
+      </div>
+  </div>
+    <div class="col-6">
+
+    </div>
+</div>
+</div>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
     </html>
