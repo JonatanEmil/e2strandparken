@@ -7,7 +7,9 @@
     </div>
 
         <div class="d-flex justify-content-end m-3">
-        <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
+        <button class="btn btn-sm" type="button"><i class="sprog fa-solid fa-globe"></i></button>
+        <button class="btn btn-sm" type="button"><i class="info fa-solid fa-circle-info"></i></button>
+        <button class="btn btn-sm" type="button"><i class="FAQ fa-solid fa-circle-question"></i></button>
         </div>
 
 </nav>
