@@ -8,12 +8,19 @@
     const long = res.results[0].longitude;
 
 })*/
+function weather(){
 const todayTemp = document.querySelector('#todayTemp')
+
+    const currentHour = new Date().getHours();
 
 fetch('https://api.open-meteo.com/v1/forecast?latitude=55.7175&longitude=11.71279&hourly=temperature_2m,apparent_temperature,weather_code,wind_speed_10m&forecast_days=1')
     .then(req => req.json())
     .then(res => {
         console.log(res);
-        const temp = res.hourly.temperature_2m[12];
+        const temp = res.hourly.temperature_2m[currentHour];
         todayTemp.innerHTML = temp;
     })
+}
+weather();
+
+setInterval(weather,3600000)
