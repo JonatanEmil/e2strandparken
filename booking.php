@@ -19,12 +19,14 @@ require "settings/init.php";
 
 <body class="bg-baggrund">
 
+<?php include "navbar.php"; ?>
+
 <div class="container">
 <div class="row g-2">
   <div class="col-6">
       <div>
           <div>
-              <p>Hej mit navn er nanna</p>
+
 
           </div>
       </div>
