@@ -6,6 +6,10 @@
         </button>
     </div>
 
+    <div class="pt-4 ps-4">
+        <p class="navover">BOOK GOLF</p>
+    </div>
+
         <div class="d-flex justify-content-end m-3">
         <button class="btn btn-sm" type="button"><i class="sprog fa-solid fa-globe"></i></button>
         <button class="btn btn-sm" type="button"><i class="info fa-solid fa-circle-info"></i></button>
