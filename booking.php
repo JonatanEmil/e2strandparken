@@ -20,14 +20,14 @@ require "settings/init.php";
 <body>
 <div class="row g-2">
     <?php
-    $produkter = $db->sql("SELECT * FROM produkter");
+    $produkter = $db->sql("SELECT * FROM diamanter");
     foreach($produkter as $produkt) {
         ?>
         <div class="col-12 col-md-6">
             <div class="card w-100">
                 <div class="card-header">
                     <?php
-                    echo $produkt->prodNavn;
+                    echo $produkt->diamantNavn;
                     ?>
                 </div>
                 <div class="card-body">
