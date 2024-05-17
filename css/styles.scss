@@ -56,6 +56,23 @@ body{
 	color: #ffff;
 }
 
+.square {
+	position: relative;
+	width: 100%;
+}
+.sqcontent {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 1.5rem;
+}
+
 .navover{
 	   font-family: "Baskerville", serif;
 	font-size: xx-large;
