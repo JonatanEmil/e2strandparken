@@ -1,8 +1,8 @@
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 
-<nav class="navbar bg-baggrund">
+<nav class="navbar bg-navbar">
     <div class="d-flex m-3">
-        <button class="btn btn-outline-success me-2" type="button"><i class="fa-solid fa-arrow-left"></i>
+        <button class="btn me-2" type="button"><i class="pil fa-solid fa-arrow-left "></i>
         </button>
     </div>
 
