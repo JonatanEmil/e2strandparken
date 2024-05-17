@@ -35,7 +35,7 @@ require "settings/init.php";
             <div class="col-4">
                 <div class="square bg-danger">
                     <div class="sqcontent">
-
+                        square
                     </div>
 
                 </div>
