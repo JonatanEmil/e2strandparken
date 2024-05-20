@@ -21,14 +21,14 @@ require "settings/init.php";
 <div class="container">
     <div class="row d-flex align-items-center" style="height: 768px;">
         <div class="col-6">
-            <div>
-                <div class="text-center py-4">
-                    <img src="weaImg/0.png" id="todayWeatherIcon" class="img-fluid w-50" alt="Vejr ikon">
+            <div class="row d-flex">
+                <div class="offset-2 col-2 justify-content-end">
+                    <img src="weaImg/0.png" id="todayWeatherIcon" class="img-fluid" alt="Vejr ikon">
                 </div>
-                <div class="col-12 fs-1 text-center">
+                <div class="col-8 fs-1 text-start">
                     <span id="todayTemp">0</span><span>&#8451;</span>
                 </div>
-                <div class="col-12 fs-1 text-center">
+                <div class="offset-4 col-8 fs-1 text-start">
                     <div id="clock"></div>
                 </div>
             </div>

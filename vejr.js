@@ -8,9 +8,9 @@
     const long = res.results[0].longitude;
 
 })*/
+
 const todayTemp = document.querySelector('#todayTemp')
 const todayWeatherIcon = document.querySelector('#todayWeatherIcon');
-
 const currentHour = new Date().getHours();
 
 function weather() {
@@ -21,7 +21,8 @@ function weather() {
             console.log(res);
             const temp = res.hourly.temperature_2m[currentHour];
             todayTemp.innerHTML = temp;
-            todayWeatherIcon.src = 'images/' + getWeatherIcon(res.hourly.weather_code[currentHour]);
+            todayWeatherIcon.src = 'weaImg/' + getWeatherIcon(res.hourly.weather_code[currentHour]);
+            todayWeatherIcon.alt = 'weaImg/' + getWeatherIcon(res.hourly.weather_code[currentHour]);
         })
 }
 
