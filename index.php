@@ -22,6 +22,9 @@ require "settings/init.php";
     <div class="row d-flex align-items-center" style="height: 768px;">
         <div class="col-6">
             <div>
+                <div class="text-center py-4">
+                    <img src="weaImg/0.png" id="todayWeatherIcon" class="img-fluid w-50" alt="Vejr ikon">
+                </div>
                 <div class="col-12 fs-1 text-center">
                     <span id="todayTemp">0</span><span>&#8451;</span>
                 </div>
