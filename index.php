@@ -40,6 +40,14 @@ require "settings/init.php";
 
                 </div>
             </div>
+            <div class="col-4">
+                <div class="square bg-danger">
+                    <div class="sqcontent">
+                        square
+                    </div>
+
+                </div>
+            </div>
 
         </div>
             <div class="row g-2">
