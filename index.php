@@ -22,14 +22,15 @@ require "settings/init.php";
     <div class="row d-flex align-items-center" style="height: 768px;">
         <div class="col-6">
             <div class="row d-flex">
-                <div class="offset-2 col-2 justify-content-end">
-                    <img src="weaImg/0.png" id="todayWeatherIcon" class="img-fluid" alt="Vejr ikon">
+                <div class="col-7 fs-1 text-end">
+                    <div id="clock"></div>
                 </div>
-                <div class="col-8 fs-1 text-start">
+                <div class="w-100"></div>
+                <div class="col-7 fs-1 text-end">
                     <span id="todayTemp">0</span><span>&#8451;</span>
                 </div>
-                <div class="offset-4 col-8 fs-1 text-start">
-                    <div id="clock"></div>
+                <div class=" col-2 justify-content-start">
+                    <img src="weaImg/0.png" id="todayWeatherIcon" class="img-fluid" alt="Vejr ikon">
                 </div>
             </div>
         </div>
