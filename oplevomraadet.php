@@ -24,16 +24,15 @@ require "settings/init.php";
     <div class="row">
         <div class="row pb-4 border-bottom border-2 border-hvid" >
             <div class="col ps-5">
-                <img class="rounded-2" src="img/vinsmagning.webp">
+                <img class="rounded-2" src="img/tur.webp" height="300">
             </div>
             <div class="col">
                 <div class="pt-4">
-                    <p class="fs-1 overskrift fw-medium">Vinsmagning</p>
-                    <p>Træd ind i vinens verden og udforsk en mangfoldighed af <br> smage og aromaer med vores eksklusive
-                        vinsmagning.
-                        <br>Perfekt for både nybegyndere og vinentusiaster!</p>
-                    <p class="fst-italic">Tidspunkt: d. 12/07 kl 20 i Restaurant Blossom </p>
-                    <p>Tilmeldelse via vores hjemmeside</p>
+                    <p class="fs-1 overskrift fw-medium">Gå en tur i naturen</p>
+                    <p>I det naturskønne område kan man gå en dejlig tur langs stranden, <br>
+                        som ligger et stenkast fra hotellet. Det ville også være muligt at tage et dyb i vandet, hvis man er til det.  <br>
+                        Her vil der være mulighed for at finde flotte muslingeskaller, som er <br>
+                        vasket ind med bølgerne. </p>
                 </div>
             </div>
         </div>
@@ -44,17 +43,14 @@ require "settings/init.php";
             <div class="row pb-4 border-bottom border-2 border-hvid">
                 <div class="col">
                     <div class=" ps-3 pt-2">
-                        <p class="fs-1 overskrift fw-medium"> Flow Yoga</p>
-                        <p class="fs-5">For nybegyndere</p>
-                        <p>Find ro, styrke og fleksibilitet med vores Flow Yoga for begyndere. <br>
-                            Perfekt for dig, der vil starte yogarejsen i en støttende og afslappet atmosfære.
-                            Kontakt personale for mere info.</p>
-                        <p class="fst-italic">Tidspunkt: d. 14/05 kl 10. Varighed 60 min</p>
-                        <p>Du er velkommen til at medbringe din egen måtte.</p>
+                        <p class="fs-1 overskrift fw-medium"> Lær træerne at kende</p>
+                        <p>Gå en tur i Strandparken, hvor i finder et bredt udvalg af træer.
+                            Find en brochure i lobbyen med information om alle de danske træer som i kan finde i området.
+                            Gå ud og bliv klogere!</p>
                     </div>
                 </div>
                 <div class="col ps-5">
-                    <img class="rounded-2" src="img/yoga.webp">
+                    <img class="rounded-2" src="img/tree.webp" height="300">
                 </div>
             </div>
         </div>
@@ -63,16 +59,13 @@ require "settings/init.php";
             <div class="row">
                 <div class="row pb-4 border-bottom border-2 border-hvid">
                     <div class="col ps-4">
-                        <img class="rounded-2" src="img/madsmagning.webp">
+                        <img class="rounded-2" src="img/golf2.webp" height="300">
                     </div>
                     <div class="col">
                         <div class="ps-3 pt-4">
-                            <p class="fs-1 overskrift fw-medium">Restaurant Blossom </p>
-                            <p class="fs-5">Tester ny menu</p>
-                            <p>Kom og smag vores spændende nye menu hos Restaurant<br> Blossom!
-                                Vi har nøje udvalgt friske ingredienser og innovative </br>retter, der vil forkæle dine
-                                smagsløg.</p>
-                            <p class="fst-italic">Prøv nu. Book bord fra kl 17.30 hver dag.</p>
+                            <p class="fs-1 overskrift fw-medium">Tag ud og spil golf </p>
+                            <p>Hvis i gerne vil ud og bevæge jer, kan i tage ud hen og spille golf på den nærlæggende golfbane. Book en tid under “Book golf”.
+                            <div><i class="fa-solid fa-car p-3"></i><p>11 min</p></div>
                         </div>
                     </div>
                 </div>
@@ -80,20 +73,36 @@ require "settings/init.php";
             <br><br>
             <div class="container">
                 <div class="row">
+                    <div class="row pb-4 border-bottom border-2 border-hvid">
                     <div class="col pt-4">
-                        <p class="fs-1 overskrift fw-medium ">Valentines dag</p>
-                        <p>Gør Valentinsdag til en uforglemmelig begivenhed med et <br>
-                            ophold på Hotel Strandparken. Book jeres romantiske getaway <br>
-                            i dag og lad os sørge for, at I fejrer kærligheden på bedste vis.</p>
-                        <p>Giv en oplevelse din partner aldrig vil glemme. Mere infomation <br>
-                            findes på vores hjemmeside.</p>
-                        <p class="fst-italic">Tidspunkt. d. 14-16/02 - Valentinesweekend</p>
+                        <p class="fs-1 overskrift fw-medium ">Holbæk havn</p>
+                        <p> Et kort stykke fra hotellet ligger Holbæk havn, som skaber liv til byen. Her kan man tage ned og spise en lækker is. Derudover er det tæt på centrum,
+                            hvor der er shopping muligheder samt restaurenter og cafeer. </p>
+                        <div class="row"><i class="fa-solid fa-car p-3"></i><p>4 min</p><i class="fa-solid fa-person-walking p-3"></i><p>25 min</p></div>
                     </div>
                     <div class="col ps-5">
-                        <img class="rounded-2" src="img/valentines.webp">
+                        <img class="rounded-2" src="img/havn.webp" height="300">
                     </div>
                 </div>
-                <br>
+                </div>
+                <br><br>
+                <div class="container">
+                    <div class="row">
+                            <div class="col ps-4">
+                                <img class="rounded-2" src="img/museum.webp" height="300">
+                            </div>
+                            <div class="col">
+                                <div class="ps-3 pt-4">
+                                    <p class="fs-1 overskrift fw-medium">Museum Vestsjælland</p>
+                                    <p>På Holbæk museum kan man både se særudstillinger og faste udstillinger.
+                                        Find flere informationer på hvad man kan opleve på </p>
+                                        <p class="fst-italic">www.vestmuseum.dk/holbaek-museum/</p>
+                                    <div class="row"><i class="fa-solid p-3 fa-car"></i><p>5 min</p><i class="fa-solid fa-person-walking p-3"></i><p>21 min</p></div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
 
 
                 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
