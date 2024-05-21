@@ -12,6 +12,8 @@ $link-decoration: none;
 
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+
 
 // 4. Include any default map overrides here
 $custom-colors: (
@@ -21,6 +23,10 @@ $custom-colors: (
 				"text":#4D5655,
 				"hvid":#ffff,
 );
+
+$form-check-input-bg: none;
+$form-check-input-checked-bg-color: #5B9874;
+$form-check-input-checked-border-color: #346C4B;
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
@@ -34,7 +40,7 @@ body{
 }
 
 .overskrift{
-	font-family: "Baskerville", serif;
+	font-family: "Baskervville", serif;
 }
 
 .pil{
@@ -99,7 +105,20 @@ body{
 }
 
 .navover{
-	   font-family: "Baskerville", serif;
+	   font-family: "Baskervville", serif;
 	font-size: xx-large;
 	color: #ffff;
 }
+
+.rsoverskrift{
+	font-family: "Baskervville", serif;
+}
+
+.mini{
+	font-size: 1px;
+}
+
+.btn{
+	color: #ffff;
+}
+
