@@ -297,8 +297,33 @@
                 </div>
 
             </div>
-        </div>
 
+
+            <div class="mt-3 ms-2 overskrift text-hvid fs-6 fw-semibold">
+                <label for="room" class="form-label">Værelsesnummer</label>
+                <input type="number" class="form-control" id="room" name="data[room]" placeholder="">
+
+            </div>
+
+            <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
+                <label for="name" class="form-label">Fulde navn</label>
+                <input type="text" class="form-control" id="name" name="data[room]" placeholder="">
+            </div>
+
+            <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="data[room]" placeholder="">
+            </div>
+
+            <div class="form-check text-hvid overskrift fw-semibold fs-6 mt-2 ms-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Bekræft <a href="#" class="">handelsbetingelserne</a>
+                </label>
+            </div>
+
+
+        </div>
     </div>
 </div>
 
