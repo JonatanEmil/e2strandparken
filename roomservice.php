@@ -17,7 +17,7 @@
 <?php include "navbar.php"; ?>
 
 <div class="container">
-    <div class="row">
+    <div class="row g-2">
         <div class="col-12">
             <img class="rounded-3 object-fit-cover mt-3" src="img/RS.webp" alt=""
                  style="height: 200px; width: 100%; object-position: 50% 58%;">
@@ -25,8 +25,8 @@
 
         <div class="col-4 mt-2 rounded-3">
             <div class="bg-kasse text-hvid rounded-3">
-                <p class="fs-5 text-hvid text-center overskrift pt-3">COCKTAILS</p>
-                <div class="mini p-4">
+                <p class="fs-3 text-hvid text-center overskrift pt-2">COCKTAILS</p>
+                <div class="mini p-3">
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <p class="mb-0">Espresso Martini</p>
                         <div class="counter-container ms-3 d-flex">
@@ -71,11 +71,144 @@
                             <button class="btn bg-pink ms-2 increment">+</button>
                         </div>
                     </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <p class="mb-0">Long Island Iced Tea</p>
+                        <div class="counter-container ms-3 d-flex">
+                            <button class="btn bg-pink me-2 decrement">-</button>
+                            <div class="ps-2 pe-2 text-center counter">0</div>
+                            <button class="btn bg-pink ms-2 increment">+</button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <p class="mb-0">Pina Colada</p>
+                        <div class="counter-container ms-3 d-flex">
+                            <button class="btn bg-pink me-2 decrement">-</button>
+                            <div class="ps-2 pe-2 text-center counter">0</div>
+                            <button class="btn bg-pink ms-2 increment">+</button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <p class="mb-0">Bramble</p>
+                        <div class="counter-container ms-3 d-flex">
+                            <button class="btn bg-pink me-2 decrement">-</button>
+                            <div class="ps-2 pe-2 text-center counter">0</div>
+                            <button class="btn bg-pink ms-2 increment">+</button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <p class="mb-0">Mojito</p>
+                        <div class="counter-container ms-3 d-flex">
+                            <button class="btn bg-pink me-2 decrement">-</button>
+                            <div class="ps-2 pe-2 text-center counter">0</div>
+                            <button class="btn bg-pink ms-2 increment">+</button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0">Gin Hass</p>
+                        <div class="counter-container ms-3 d-flex">
+                            <button class="btn bg-pink me-2 decrement">-</button>
+                            <div class="ps-2 pe-2 text-center counter">0</div>
+                            <button class="btn bg-pink ms-2 increment">+</button>
+                        </div>
+                    </div>
 
                 </div>
 
             </div>
         </div>
+
+        <div class="col-4 mt-2 rounded-3">
+            <div class="bg-kasse text-hvid rounded-3">
+                <p class="fs-3 text-hvid text-center overskrift pt-2">MOCKTAILS</p>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <p class="mb-0">Espresso Martini</p>
+                    <div class="counter-container ms-3 d-flex">
+                        <button class="btn bg-pink me-2 decrement">-</button>
+                        <div class="ps-2 pe-2 text-center counter">0</div>
+                        <button class="btn bg-pink ms-2 increment">+</button>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <p class="mb-0">Espresso Martini</p>
+                    <div class="counter-container ms-3 d-flex">
+                        <button class="btn bg-pink me-2 decrement">-</button>
+                        <div class="ps-2 pe-2 text-center counter">0</div>
+                        <button class="btn bg-pink ms-2 increment">+</button>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <p class="mb-0">Espresso Martini</p>
+                    <div class="counter-container ms-3 d-flex">
+                        <button class="btn bg-pink me-2 decrement">-</button>
+                        <div class="ps-2 pe-2 text-center counter">0</div>
+                        <button class="btn bg-pink ms-2 increment">+</button>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <p class="mb-0">Espresso Martini</p>
+                    <div class="counter-container ms-3 d-flex">
+                        <button class="btn bg-pink me-2 decrement">-</button>
+                        <div class="ps-2 pe-2 text-center counter">0</div>
+                        <button class="btn bg-pink ms-2 increment">+</button>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <p class="mb-0">Espresso Martini</p>
+                    <div class="counter-container ms-3 d-flex">
+                        <button class="btn bg-pink me-2 decrement">-</button>
+                        <div class="ps-2 pe-2 text-center counter">0</div>
+                        <button class="btn bg-pink ms-2 increment">+</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="bg-kasse text-hvid rounded-3 pb-1 mt-2">
+                <p class="fs-3 text-hvid text-center overskrift pt-2">ØL OG VAND</p>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <p class="mb-0">Espresso Martini</p>
+                    <div class="counter-container ms-3 d-flex">
+                        <button class="btn bg-pink me-2 decrement">-</button>
+                        <div class="ps-2 pe-2 text-center counter">0</div>
+                        <button class="btn bg-pink ms-2 increment">+</button>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <p class="mb-0">Espresso Martini</p>
+                    <div class="counter-container ms-3 d-flex">
+                        <button class="btn bg-pink me-2 decrement">-</button>
+                        <div class="ps-2 pe-2 text-center counter">0</div>
+                        <button class="btn bg-pink ms-2 increment">+</button>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <p class="mb-0">Espresso Martini</p>
+                    <div class="counter-container ms-3 d-flex">
+                        <button class="btn bg-pink me-2 decrement">-</button>
+                        <div class="ps-2 pe-2 text-center counter">0</div>
+                        <button class="btn bg-pink ms-2 increment">+</button>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <p class="mb-0">Espresso Martini</p>
+                    <div class="counter-container ms-3 d-flex">
+                        <button class="btn bg-pink me-2 decrement">-</button>
+                        <div class="ps-2 pe-2 text-center counter">0</div>
+                        <button class="btn bg-pink ms-2 increment">+</button>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <p class="mb-0">Espresso Martini</p>
+                    <div class="counter-container ms-3 d-flex">
+                        <button class="btn bg-pink me-2 decrement">-</button>
+                        <div class="ps-2 pe-2 text-center counter">0</div>
+                        <button class="btn bg-pink ms-2 increment">+</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 </div>
 
