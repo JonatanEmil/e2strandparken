@@ -26,15 +26,14 @@
             <div class="bg-kasse">
                 <p class="fs-5 text-hvid text-center overskrift">COCKTAILS</p>
 
-                <div class="cocktail-item">
-                    <p>Espresso Martini</p>
-                    <div class="counter-container">
-                        <button id="decrementButton" class="btn bg-pink">-</button>
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="mb-0">Espresso Martini</p>
+                    <div class="counter-container ms-3">
+                        <button id="decrementButton" class="btn bg-pink me-2">-</button>
                         <div id="counter" class="ps-2 pe-2 text-center">0</div>
-                        <button id="incrementButton" class="btn bg-pink">+</button>
+                        <button id="incrementButton" class="btn bg-pink ms-2">+</button>
                     </div>
                 </div>
-
 
 
 
@@ -43,6 +42,7 @@
 
     </div>
 </div>
+
 
 <script>
     // Hent referencer til knapperne og tællerelementet
@@ -67,7 +67,6 @@
             counterElement.textContent = count;
         }
     });
-
 </script>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
