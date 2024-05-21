@@ -27,7 +27,7 @@ require "settings/init.php";
                 </div>
                 <div class="w-100"></div>
                 <div class="col-7 fs-1 text-end">
-                    <span id="todayTemp">0</span><span>&#8451;</span>
+                    <span id="todayTemp">0</span><span>&#8451; C</span>
                 </div>
                 <div class=" col-2 justify-content-start">
                     <img src="weaImg/0.png" id="todayWeatherIcon" class="img-fluid" alt="Vejr ikon">
