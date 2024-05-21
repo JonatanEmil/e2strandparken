@@ -16,7 +16,7 @@ require "settings/init.php";
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body class="bg-baggrund">
+    <body class="bg-baggrund text-text">
     <?php include "navbar.php"; ?>
 
 <br>
@@ -27,10 +27,10 @@ require "settings/init.php";
             </div>
             <div class="col">
                 <div class="pt-4">
-                <p class="fs-2 overskrift">Vinsmagning</p>
+                <p class="fs-1 overskrift fw-medium">Vinsmagning</p>
                 <p>Træd ind i vinens verden og udforsk en mangfoldighed af <br> smage og aromaer med vores eksklusive vinsmagning.
                     <br>Perfekt for både nybegyndere og vinentusiaster!</p>
-                <p>Tidspunkt: d. 12/07 kl 20 i Restaurant Blossom </p>
+                <p class="fst-italic">Tidspunkt: d. 12/07 kl 20 i Restaurant Blossom </p>
                 <p>Tilmeldelse via vores hjemmeside</p>
                 </div>
             </div>
@@ -40,12 +40,12 @@ require "settings/init.php";
             <div class="row">
                 <div class="col">
                     <div class=" ps-3 pt-4">
-                    <p class="fs-2 overskrift"> Flow Yoga</p>
-                    <p class="fst-italic">For nybegyndere</p>
+                    <p class="fs-1 overskrift fw-medium"> Flow Yoga</p>
+                    <p class="fs-5">For nybegyndere</p>
                     <p>Find ro, styrke og fleksibilitet med vores Flow Yoga for begyndere. <br>
                         Perfekt for dig, der vil starte yogarejsen i en støttende og afslappet atmosfære.
                         Kontakt personale for mere info.</p>
-                    <p>Tidspunkt: d. 14/05 kl 10. Varighed 60 min</p>
+                    <p class="fst-italic">Tidspunkt: d. 14/05 kl 10. Varighed 60 min</p>
                     <p>Du er velkommen til at medbringe din egen måtte.</p>
                     </div>
                 </div>
@@ -61,25 +61,25 @@ require "settings/init.php";
                     </div>
                     <div class="col">
                         <div class="ps-3 pt-4">
-                        <p class="fs-2 overskrift">Restaurant Blossom </p>
-                            <p class="fst-italic">Tester ny menu</p>
+                        <p class="fs-1 overskrift fw-medium">Restaurant Blossom </p>
+                            <p class="fs-5">Tester ny menu</p>
                         <p>Kom og smag vores spændende nye menu hos Restaurant<br> Blossom!
                             Vi har nøje udvalgt friske ingredienser og innovative </br>retter, der vil forkæle dine smagsløg.</p>
-                        <p>Prøv nu. Book bord fra kl 17.30 hver dag.</p>
+                        <p class="fst-italic">Prøv nu. Book bord fra kl 17.30 hver dag.</p>
                         </div>
                     </div>
                 </div>
 <br><br>
                 <div class="container">
                     <div class="row">
-                        <div class="col pt-5">
-                            <p class="fs-2 overskrift">Valentines dag</p>
+                        <div class="col pt-4">
+                            <p class="fs-1 overskrift fw-medium ">Valentines dag</p>
                             <p>Gør Valentinsdag til en uforglemmelig begivenhed med et <br>
                                 ophold på Hotel Strandparken. Book jeres romantiske getaway <br>
                                 i dag og lad os sørge for, at I fejrer kærligheden på bedste vis.</p>
                             <p>Giv en oplevelse din partner aldrig vil glemme. Mere infomation <br>
                                 findes på vores hjemmeside.</p>
-                            <p>Tidspunkt. d. 14-16/02 - Valentinesweekend</p>
+                            <p class="fst-italic">Tidspunkt. d. 14-16/02 - Valentinesweekend</p>
                         </div>
                         <div class="col ps-5">
                             <img class="rounded-2" src="img/valentines.webp">
