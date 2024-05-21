@@ -19,58 +19,45 @@ require "settings/init.php";
 
 <body class="bg-baggrund">
 <div class="container">
-    <div class="row d-flex align-items-center">
+    <div class="row d-flex align-items-center" style="height: 768px;">
         <div class="col-6">
-            <div>
-                <div class="col-12 fs-1 text-center">
-                    <span id="todayTemp">0</span><span>&#8451;</span>
-                </div>
-                <div class="col-12 fs-1 text-center">
+            <div class="row d-flex">
+                <div class="col-7 fs-1 text-end">
                     <div id="clock"></div>
                 </div>
+                <div class="w-100"></div>
+                <div class="col-7 fs-1 text-end">
+                    <span id="todayTemp">0</span><span>&#8451;</span>
+                </div>
+                <div class=" col-2 justify-content-start">
+                    <img src="weaImg/0.png" id="todayWeatherIcon" class="img-fluid" alt="Vejr ikon">
+                </div>
             </div>
         </div>
         <div class="col-6">
-
+            <div class="diamond">
+            <div class="row g-2">
+                <?php
+                $produkter = $db->sql("SELECT * FROM diamanter");
+                foreach ($produkter as $produkt) {
+                ?>
             <div class="col-4">
-                <div class="square bg-danger">
-                    <div class="sqcontent">
-                        square
+                <div class="d-flex">
+                    <img src="img/golf.webp" alt="" class="img-fluid square">
+                    <div class="sqcontent text-center">
+                        <?php
+                        echo $produkt->diamantNavn;
+                        ?>
                     </div>
 
                 </div>
             </div>
-
+                    <?php
+                }
+                ?>
+            </div>
+            </div>
         </div>
-            <div class="row g-2">
-            <?php
-            $produkter = $db->sql("SELECT * FROM diamanter");
-             foreach ($produkter as $produkt) {
-                 ?>
-                 <div class="col-4">
-                     <div class="card w-100">
-                         <div class="card-header">
-                             <?php
-                            echo $produkt->diamantNavn;
-            ?>
-                        </div>
-                        <div class="card-body">
-                            <?php
-            // Indsæt andet felt fra database
-            ?>
-                        </div>
-                        <div class="card-footer text-muted">
-                            <?php
-            // Indsæt andet felt fra database
-            ?>
-                        </div>
-                    </div>
-                </div>
-                <?php
-            }
-            ?>
-        </div>
-
         </div>
 </div>
 
