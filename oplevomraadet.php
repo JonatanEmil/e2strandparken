@@ -6,7 +6,7 @@ require "settings/init.php";
 <head>
     <meta charset="utf-8">
 
-    <title>Arrangementer</title>
+    <title>Oplev området</title>
 
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
@@ -23,40 +23,40 @@ require "settings/init.php";
 <div class="container">
     <div class="row">
         <div class="row pb-4 border-bottom border-2 border-hvid" >
-        <div class="col ps-5">
-            <img class="rounded-2" src="img/vinsmagning.webp">
-        </div>
-        <div class="col">
-            <div class="pt-4">
-                <p class="fs-1 overskrift fw-medium">Vinsmagning</p>
-                <p>Træd ind i vinens verden og udforsk en mangfoldighed af <br> smage og aromaer med vores eksklusive
-                    vinsmagning.
-                    <br>Perfekt for både nybegyndere og vinentusiaster!</p>
-                <p class="fst-italic">Tidspunkt: d. 12/07 kl 20 i Restaurant Blossom </p>
-                <p>Tilmeldelse via vores hjemmeside</p>
+            <div class="col ps-5">
+                <img class="rounded-2" src="img/vinsmagning.webp">
+            </div>
+            <div class="col">
+                <div class="pt-4">
+                    <p class="fs-1 overskrift fw-medium">Vinsmagning</p>
+                    <p>Træd ind i vinens verden og udforsk en mangfoldighed af <br> smage og aromaer med vores eksklusive
+                        vinsmagning.
+                        <br>Perfekt for både nybegyndere og vinentusiaster!</p>
+                    <p class="fst-italic">Tidspunkt: d. 12/07 kl 20 i Restaurant Blossom </p>
+                    <p>Tilmeldelse via vores hjemmeside</p>
+                </div>
             </div>
         </div>
-    </div>
     </div>
     <br><br>
     <div class="container">
         <div class="row">
             <div class="row pb-4 border-bottom border-2 border-hvid">
-            <div class="col">
-                <div class=" ps-3 pt-2">
-                    <p class="fs-1 overskrift fw-medium"> Flow Yoga</p>
-                    <p class="fs-5">For nybegyndere</p>
-                    <p>Find ro, styrke og fleksibilitet med vores Flow Yoga for begyndere. <br>
-                        Perfekt for dig, der vil starte yogarejsen i en støttende og afslappet atmosfære.
-                        Kontakt personale for mere info.</p>
-                    <p class="fst-italic">Tidspunkt: d. 14/05 kl 10. Varighed 60 min</p>
-                    <p>Du er velkommen til at medbringe din egen måtte.</p>
+                <div class="col">
+                    <div class=" ps-3 pt-2">
+                        <p class="fs-1 overskrift fw-medium"> Flow Yoga</p>
+                        <p class="fs-5">For nybegyndere</p>
+                        <p>Find ro, styrke og fleksibilitet med vores Flow Yoga for begyndere. <br>
+                            Perfekt for dig, der vil starte yogarejsen i en støttende og afslappet atmosfære.
+                            Kontakt personale for mere info.</p>
+                        <p class="fst-italic">Tidspunkt: d. 14/05 kl 10. Varighed 60 min</p>
+                        <p>Du er velkommen til at medbringe din egen måtte.</p>
+                    </div>
+                </div>
+                <div class="col ps-5">
+                    <img class="rounded-2" src="img/yoga.webp">
                 </div>
             </div>
-            <div class="col ps-5">
-                <img class="rounded-2" src="img/yoga.webp">
-            </div>
-        </div>
         </div>
         <br><br>
         <div class="container">
@@ -99,3 +99,4 @@ require "settings/init.php";
                 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 <?php
+
