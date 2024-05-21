@@ -1,8 +1,8 @@
 <?php
 require "settings/init.php";
 ?>
-    <!DOCTYPE html>
-    <html lang="da">
+<!DOCTYPE html>
+<html lang="da">
 <head>
     <meta charset="utf-8">
 
@@ -21,21 +21,27 @@ require "settings/init.php";
 
 <?php include "navbar.php"; ?>
 
-<div class="container">
-<div class="row g-2">
-  <div class="col-6">
-      <div>
-          <div>
+<div class="container pt-2">
+    <div class="row g-2">
+        <div class="col-6">
+            <div class="col-12">
+                <img class="img-fluid rounded-3" src="img/golf.webp" alt="" style="height: 250px">
+            </div>
+            <div class="col-12 rounded-3 bg-kasse mt-2 p-3">
+                <p class="text-hvid">
+                Både hotellet og golfbanen ligger i naturskønne omgivelser med udsigt over fjorden, og derfor er en tur på golfbanen hos os  særligt attraktivt.
+                Holbæk Golfklub ligger blot 10 minutter fra vores hotel, så når du har spist dig mæt i vores lækre morgenmadsbuffet, er der ikke langt til, at du står på banen.
+                </p>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="bg-kasse rounded-3 p-3">
+                Ledige tider
+            </div>
 
-
-          </div>
-      </div>
-  </div>
-    <div class="col-6">
-
+        </div>
     </div>
-</div>
 </div>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-    </html>
+</html>
