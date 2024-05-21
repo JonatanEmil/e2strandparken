@@ -25,7 +25,7 @@ require "settings/init.php";
     <div class="row g-2">
         <div class="col-6">
             <div class="col-12">
-                <img class="img-fluid rounded-3" src="img/golf.webp" alt="" style="height: 250px">
+                <img class="rounded-3 object-fit-cover " src="img/golf.webp" alt="" style="height: 400px; width: 100%; object-position: 50% 25%;">
             </div>
             <div class="col-12 rounded-3 bg-kasse mt-2 p-3">
                 <p class="text-hvid">
@@ -35,7 +35,7 @@ require "settings/init.php";
             </div>
         </div>
         <div class="col-6">
-            <div class="bg-kasse rounded-3 p-3">
+            <div class="bg-kasse rounded-3 p-3 text-hvid text-center fs-1 overskrift">
                 Ledige tider
             </div>
 
