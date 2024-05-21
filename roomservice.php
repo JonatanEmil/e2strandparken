@@ -1,4 +1,5 @@
-<body>
+<body class="bg-baggrund">
+
 <?php include "navbar.php"; ?>
 
 
