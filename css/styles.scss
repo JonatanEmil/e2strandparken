@@ -24,6 +24,10 @@ $custom-colors: (
 				"hvid":#ffff,
 );
 
+$form-check-input-bg: none;
+$form-check-input-checked-bg-color: #5B9874;
+$form-check-input-checked-border-color: #346C4B;
+
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "bootstrapComponents";
