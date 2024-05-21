@@ -22,9 +22,10 @@
             <img class="rounded-3 object-fit-cover mt-3" src="img/RS.webp" alt="" style="height: 200px; width: 100%; object-position: 50% 58%;">
         </div>
 
-        <div class="col-4">
+        <div class="col-4 mt-2 rounded-3">
             <div class="bg-kasse">
-                <p class="fs-5">COCKTAILS</p>
+                <p class="fs-5 text-hvid text-center overskrift">COCKTAILS</p>
+                <p></p>
 
 
             </div>
