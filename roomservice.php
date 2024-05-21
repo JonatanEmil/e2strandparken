@@ -25,7 +25,17 @@
         <div class="col-4 mt-2 rounded-3">
             <div class="bg-kasse">
                 <p class="fs-5 text-hvid text-center overskrift">COCKTAILS</p>
-                <p></p>
+
+                <div class="cocktail-item">
+                    <p>Espresso Martini</p>
+                    <div class="counter-container">
+                        <button id="decrementButton" class="btn bg-pink">-</button>
+                        <div id="counter" class="ps-2 pe-2 text-center">0</div>
+                        <button id="incrementButton" class="btn bg-pink">+</button>
+                    </div>
+                </div>
+
+
 
 
             </div>
@@ -34,7 +44,32 @@
     </div>
 </div>
 
+<script>
+    // Hent referencer til knapperne og tællerelementet
+    const incrementButton = document.getElementById('incrementButton');
+    const decrementButton = document.getElementById('decrementButton');
+    const counterElement = document.getElementById('counter');
 
+    let count = 0;
 
+    // Tilføj eventlistener til knappen for at tælle op
+    incrementButton.addEventListener('click', function() {
+        if (count < 10) {
+            count++;
+            counterElement.textContent = count;
+        }
+    });
 
+    // Tilføj eventlistener til knappen for at tælle ned
+    decrementButton.addEventListener('click', function() {
+        if (count > 0) {
+            count--;
+            counterElement.textContent = count;
+        }
+    });
+
+</script>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>
