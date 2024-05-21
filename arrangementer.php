@@ -19,54 +19,61 @@ require "settings/init.php";
     <body class="bg-baggrund">
     <?php include "navbar.php"; ?>
 
-
+<br>
     <div class="container">
         <div class="row">
-            <div class="col">
-                1 of 2
+            <div class="col ps-5">
+                <img class="rounded-2" src="img/vinsmagning.webp">
             </div>
             <div class="col">
-                <p class="h3">Vinsmagning</p>
+                <div class="pt-4">
+                <p class="fs-2 overskrift">Vinsmagning</p>
                 <p>Træd ind i vinens verden og udforsk en mangfoldighed af <br> smage og aromaer med vores eksklusive vinsmagning.
                     <br>Perfekt for både nybegyndere og vinentusiaster!</p>
                 <p>Tidspunkt: d. 12/07 kl 20 i Restaurant Blossom </p>
                 <p>Tilmeldelse via vores hjemmeside</p>
+                </div>
             </div>
         </div>
 <br><br>
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <p class="h3"> Flow Yoga</p>
-                    <p>For nybegyndere</p>
+                    <div class=" ps-3 pt-4">
+                    <p class="fs-2 overskrift"> Flow Yoga</p>
+                    <p class="fst-italic">For nybegyndere</p>
                     <p>Find ro, styrke og fleksibilitet med vores Flow Yoga for begyndere. <br>
                         Perfekt for dig, der vil starte yogarejsen i en støttende og afslappet atmosfære.
                         Kontakt personale for mere info.</p>
                     <p>Tidspunkt: d. 14/05 kl 10. Varighed 60 min</p>
                     <p>Du er velkommen til at medbringe din egen måtte.</p>
+                    </div>
                 </div>
-                <div class="col">
-                    2 of 2
+                <div class="col ps-5">
+                    <img class="rounded-2" src="img/yoga.webp">
                 </div>
             </div>
 <br><br>
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        1 of 2
+                    <div class="col ps-4">
+                        <img class="rounded-2" src="img/madsmagning.webp">
                     </div>
                     <div class="col">
-                        <p class="h3">Restaurant Blossom <br>Tester ny menu</p>
-                        <p>Kom og smag vores spændende nye menu hos Restaurant Blossom! <br>
-                            Vi har nøje udvalgt friske ingredienser og innovative retter, der vil forkæle dine smagsløg.</p>
+                        <div class="ps-3 pt-4">
+                        <p class="fs-2 overskrift">Restaurant Blossom </p>
+                            <p class="fst-italic">Tester ny menu</p>
+                        <p>Kom og smag vores spændende nye menu hos Restaurant<br> Blossom!
+                            Vi har nøje udvalgt friske ingredienser og innovative </br>retter, der vil forkæle dine smagsløg.</p>
                         <p>Prøv nu. Book bord fra kl 17.30 hver dag.</p>
+                        </div>
                     </div>
                 </div>
 <br><br>
                 <div class="container">
                     <div class="row">
-                        <div class="col">
-                            <p class="h3">Valentines dag</p>
+                        <div class="col pt-5">
+                            <p class="fs-2 overskrift">Valentines dag</p>
                             <p>Gør Valentinsdag til en uforglemmelig begivenhed med et <br>
                                 ophold på Hotel Strandparken. Book jeres romantiske getaway <br>
                                 i dag og lad os sørge for, at I fejrer kærligheden på bedste vis.</p>
@@ -74,11 +81,11 @@ require "settings/init.php";
                                 findes på vores hjemmeside.</p>
                             <p>Tidspunkt. d. 14-16/02 - Valentinesweekend</p>
                         </div>
-                        <div class="col">
-                            2 of 2
+                        <div class="col ps-5">
+                            <img class="rounded-2" src="img/valentines.webp">
                         </div>
                     </div>
-
+<br>
 
 
 
