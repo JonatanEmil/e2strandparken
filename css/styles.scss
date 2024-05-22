@@ -26,8 +26,8 @@ $custom-colors: (
 );
 
 
-$form-check-input-checked-bg-color: #5B9874; !important
-$form-check-input-checked-border-color: #346C4B; !important
+//$form-check-input-checked-bg-color: #5B9874; !important
+//$form-check-input-checked-border-color: #346C4B; !important
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 

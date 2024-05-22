@@ -35,10 +35,13 @@ require "settings/init.php";
             </div>
         </div>
         <div class="col-6">
-            <div>
+            <div class="">
                 <img class="img-fluid" src="img/diamant.webp" alt="">
-                <div class="col-2 mx-auto">
-
+                <div class="row position-relative d-flex justify-content-center dtext">
+                    <div class="col-3 offset-5 mx-auto"><a href="">Book Golf</a></div>
+                    <div class="w-100"></div>
+                    <div class="col-3 mx-auto"><a href="">Book Golf</a></div>
+                    <div class="col-3 mx-auto"><a href="">Book Golf</a></div>
                 </div>
             </div>
         </div>
