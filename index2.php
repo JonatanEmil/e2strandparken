@@ -36,29 +36,29 @@ require "settings/init.php";
         </div>
         <div class="col-6">
             <div class="diamond">
-                <div class="row g-2">
-                    <?php
-                    $produkter = $db->sql("SELECT * FROM diamanter");
-                    foreach ($produkter as $produkt) {
-                        ?>
-                        <div class="col-4">
-                            <div class="d-flex">
-                                <img src="img/golf.webp" alt="" class="img-fluid square">
-                                <div class="sqcontent text-center">
-                                    <?php
-                                    echo $produkt->diamantNavn;
-                                    ?>
-                                </div>
-
-                            </div>
-                        </div>
+            <div class="row g-2">
+                <?php
+                $produkter = $db->sql("SELECT * FROM diamanter");
+                foreach ($produkter as $produkt) {
+                ?>
+            <div class="col-4">
+                <div class="d-flex">
+                    <img src="img/golf.webp" alt="" class="img-fluid square">
+                    <div class="sqcontent text-center">
                         <?php
-                    }
-                    ?>
+                        echo $produkt->diamantNavn;
+                        ?>
+                    </div>
+
                 </div>
             </div>
+                    <?php
+                }
+                ?>
+            </div>
+            </div>
         </div>
-    </div>
+        </div>
 </div>
 
 
