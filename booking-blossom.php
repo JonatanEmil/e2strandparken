@@ -64,21 +64,26 @@ if (!empty($_POST["data"])) {
                 </div>
 
                 <div class="col-9 ms-5">
-                    <input type="hidden" id="gTid" name="data[gTid]">
+                    <input type="hidden" id="bTid" name="data[bTid]">
                     <div class="mt-3 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                        <label for="gPersons" class="form-label">Antal personer</label>
-                        <input type="number" class="form-control" id="gPersons" name="data[gPersons]" placeholder="">
+                        <label for="bPerson" class="form-label">Antal personer</label>
+                        <input type="number" class="form-control" id="bPerson" name="data[bPerson]" placeholder="">
 
                     </div>
 
                     <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                        <label for="gNavn" class="form-label">Fulde navn</label>
-                        <input type="text" class="form-control" id="gNavn" name="data[gNavn]" placeholder="">
+                        <label for="bNavn" class="form-label">Fulde navn</label>
+                        <input type="text" class="form-control" id="bNavn" name="data[bNavn]" placeholder="">
                     </div>
 
                     <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                        <label for="gMail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="gMail" name="data[gMail]" placeholder="">
+                        <label for="bMail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="bMail" name="data[bMail]" placeholder="">
+                    </div>
+
+                    <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
+                        <label for="bCom" class="form-label">Tilføj kommentar</label>
+                        <input type="text" class="form-control" id="bCom" name="data[bCom]" placeholder="">
                     </div>
 
                     <div class="form-check text-hvid overskrift fw-semibold fs-6 mt-4 ms-2 mb-1 fw-semibold">
