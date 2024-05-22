@@ -19,15 +19,15 @@ require "settings/init.php";
 
 <body class="bg-baggrund">
 <div class="container">
-    <div class="row d-flex align-items-center" style="height: 768px;">
+    <div class="row d-flex align-items-center text-hvid fw-semibold" style="height: 768px;">
         <div class="col-6">
             <div class="row d-flex">
-                <div class="col-7 fs-1 text-end">
+                <div class="col-7 display-2 text-end fw-semibold">
                     <div id="clock"></div>
                 </div>
                 <div class="w-100"></div>
-                <div class="col-7 fs-1 text-end">
-                    <span id="todayTemp">0</span><span>&#8451;</span>
+                <div class="col-7 display-2 text-end fw-semibold">
+                    <span id="todayTemp">0</span><span class="fs-3">    &#8451;</span>
                 </div>
                 <div class=" col-2 justify-content-start">
                     <img src="weaImg/0.png" id="todayWeatherIcon" class="img-fluid" alt="Vejr ikon">

@@ -55,7 +55,7 @@ if (!empty($_POST["data"])) {
             </div>
             <div>
                 <div class="mt-2">
-                    <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-5" id="time-buttons">
+                    <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-5 text-hvid" id="time-buttons">
 
                     </div>
 
@@ -63,23 +63,26 @@ if (!empty($_POST["data"])) {
             </div>
 
 
+            <form action="booking.php" method="post">
+
+
             <div class="col-9 ms-5">
 
 
             <div class="mt-3 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                <label for="room" class="form-label">Værelsesnummer</label>
-                <input type="number" class="form-control" id="room" name="data[room]" placeholder="">
+                <label for="gPersons" class="form-label">Antal personer</label>
+                <input type="number" class="form-control" id="gPersons" name="data[gPersons]" placeholder="">
 
             </div>
 
             <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                <label for="name" class="form-label">Fulde navn</label>
-                <input type="text" class="form-control" id="name" name="data[room]" placeholder="">
+                <label for="gNavn" class="form-label">Fulde navn</label>
+                <input type="text" class="form-control" id="gNavn" name="data[gNavn]" placeholder="">
             </div>
 
             <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="data[room]" placeholder="">
+                <label for="gMail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="gMail" name="data[gMail]" placeholder="">
             </div>
 
             <div class="form-check text-hvid overskrift fw-semibold fs-6 mt-4 ms-2 mb-1 fw-semibold">
@@ -95,6 +98,7 @@ if (!empty($_POST["data"])) {
             </div>
 
             </div>
+            </form>
 
         </div>
 
