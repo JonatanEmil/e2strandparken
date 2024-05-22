@@ -30,9 +30,9 @@ require "settings/init.php";
                 <div class="pt-4">
                     <p class="fs-1 overskrift fw-medium">Gå en tur i naturen</p>
                     <p>I det naturskønne område kan man gå en dejlig tur langs stranden, <br>
-                        som ligger et stenkast fra hotellet. Det ville også være muligt at tage et dyb i vandet, hvis man er til det.  <br>
-                        Her vil der være mulighed for at finde flotte muslingeskaller, som er <br>
-                        vasket ind med bølgerne. </p>
+                        som ligger et stenkast fra hotellet. Det ville også være muligt at tage <br>
+                        et dyb i vandet, hvis man er til det. Her vil der være mulighed for at <br>
+                        finde flotte muslingeskaller, som er vasket ind med bølgerne. </p>
                 </div>
             </div>
         </div>
@@ -64,8 +64,12 @@ require "settings/init.php";
                     <div class="col">
                         <div class="ps-3 pt-4">
                             <p class="fs-1 overskrift fw-medium">Tag ud og spil golf </p>
-                            <p>Hvis i gerne vil ud og bevæge jer, kan i tage ud hen og spille golf på den nærlæggende golfbane. Book en tid under “Book golf”.
-                            <div><i class="fa-solid fa-car p-3"></i><p>11 min</p></div>
+                            <p>Hvis i gerne vil ud og bevæge jer, kan i tage ud hen og spille golf på den nærlæggende golfbane.
+                                Golfklubben er fra 1964, og består af en bane med 18 huller, 70 par.
+                                <br><br> Priser fra 250 kr. Book en tid under “Book golf”.
+                            <div class="d-flex justify-content-start align-items-start">
+                                <i class="fa-solid fa-car p-2"></i><p class="pt-1">11 min</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -78,7 +82,10 @@ require "settings/init.php";
                         <p class="fs-1 overskrift fw-medium ">Holbæk havn</p>
                         <p> Et kort stykke fra hotellet ligger Holbæk havn, som skaber liv til byen. Her kan man tage ned og spise en lækker is. Derudover er det tæt på centrum,
                             hvor der er shopping muligheder samt restaurenter og cafeer. </p>
-                        <div class="row"><i class="fa-solid fa-car p-3"></i><p>4 min</p><i class="fa-solid fa-person-walking p-3"></i><p>25 min</p></div>
+                        <br>
+                        <div class="d-flex justify-content-start align-items-start">
+                        <i class="fa-solid fa-car p-2 "></i><p class="pt-1">4 min</p><i class="fa-solid fa-person-walking ms-5 p-2"></i><p class="pt-1">25 min</p>
+                    </div>
                     </div>
                     <div class="col ps-5">
                         <img class="rounded-2" src="img/havn.webp" height="300">
@@ -94,18 +101,21 @@ require "settings/init.php";
                             <div class="col">
                                 <div class="ps-3 pt-4">
                                     <p class="fs-1 overskrift fw-medium">Museum Vestsjælland</p>
-                                    <p>På Holbæk museum kan man både se særudstillinger og faste udstillinger.
-                                        Find flere informationer på hvad man kan opleve på </p>
+                                    <p>På Holbæk museum kan man både se særudstillinger og faste udstillinger. Derudover er der arrangementer man kan tilmede
+                                        <br>sig til på deres hjemmeside.
+                                        <br>Find flere informationer på hvad man kan opleve på:</p>
                                         <p class="fst-italic">www.vestmuseum.dk/holbaek-museum/</p>
-                                    <div class="row"><i class="fa-solid p-3 fa-car"></i><p>5 min</p><i class="fa-solid fa-person-walking p-3"></i><p>21 min</p></div>
+                                    <p>Entré pris: 60 kr </p>
+                                    <div class="d-flex justify-content-start align-items-start">
+                                        <i class="fa-solid p-2 fa-car"></i><p class="pt-1">5 min</p>
+                                        <i class="fa-solid fa-person-walking ms-5 p-2"></i><p class="pt-1">21 min</p>
                                     </div>
+                                </div>
                             </div>
-                        </div>
                     </div>
-                    <br><br>
+                        <br>
 
 
                 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 <?php
-
