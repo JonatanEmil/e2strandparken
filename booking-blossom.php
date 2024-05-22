@@ -50,11 +50,11 @@ if (!empty($_POST["data"])) {
             </div>
         </div>
         <div class="col-6">
-            <div class="bg-kasse rounded-3 mx-5 p-1 text-hvid text-center fs-1 overskrift">
+            <div class="bg-kasse rounded-3 mx-5 p-1 text-hvid text-center fs-1 overskrift fw-semibold">
                 Ledige tider
             </div>
 
-            <form action="booking.php" method="post">
+            <form action="booking-blossom.php" method="post">
                 <div>
                     <div class="mt-2">
                         <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-5 text-hvid"
@@ -146,7 +146,7 @@ if (!empty($_POST["data"])) {
             button.classList.remove('bg-gron');
             button.classList.add('bg-danger'); // Add danger color to the clicked button
             selectedButton = button;
-            document.getElementById('gTid').value = button.textContent;
+            document.getElementById('bTid').value = button.textContent;
         };
         timeButtonsContainer.appendChild(button);
         startTime.setMinutes(startTime.getMinutes() + 15);
