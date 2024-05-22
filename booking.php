@@ -54,35 +54,50 @@ if (!empty($_POST["data"])) {
                 Ledige tider
             </div>
             <div>
-                <div class="mt-2 d-flex justify-content-center ">
-                    <div class="flex-wrap mt-2 mx-5" id="time-buttons">
+                <div class="mt-2">
+                    <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-5" id="time-buttons">
 
                     </div>
 
                 </div>
             </div>
-            <div class="text-hvid">
-                <form action="booking.php" method="post">
-                    <input type="hidden" id="gTid" name="data[gTid]">
-                    <div>
-                        <label for="gPersons" class="form-label">Antal personer</label>
-                        <input type="number" class="form-control" id="gPersons" name="data[gPersons]" placeholder=""
-                               value="">
-                    </div>
-                    <div>
-                        <label for="gNavn" class="form-label">Fulde navn</label>
-                        <input type="text" class="form-control" id="gNavn" name="data[gNavn]" placeholder=""
-                               value="">
-                    </div>
-                    <div>
-                        <label for="gMail" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="gMail" name="data[gMail]" placeholder=""
-                               value="">
-                    </div>
-                </form>
+
+
+            <div class="col-9 ms-5">
+
+
+            <div class="mt-3 ms-2 overskrift text-hvid fs-6 fw-semibold">
+                <label for="room" class="form-label">Værelsesnummer</label>
+                <input type="number" class="form-control" id="room" name="data[room]" placeholder="">
+
+            </div>
+
+            <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
+                <label for="name" class="form-label">Fulde navn</label>
+                <input type="text" class="form-control" id="name" name="data[room]" placeholder="">
+            </div>
+
+            <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="data[room]" placeholder="">
+            </div>
+
+            <div class="form-check text-hvid overskrift fw-semibold fs-6 mt-4 ms-2 mb-1 fw-semibold">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Bekræft <a href="#" class="">handelsbetingelserne</a>
+                </label>
+            </div>
+
+
+            <div class="d-flex justify-content-center mt-2 me-2">
+                <input class="btn btn-text fs-3 mt-2 justify-content-center px-5" type="submit" value="Bestil">
+            </div>
+
             </div>
 
         </div>
+
     </div>
 </div>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -111,16 +126,17 @@ if (!empty($_POST["data"])) {
     const startTime = getNextQuarterHour(new Date(now));
 
     for (let i = 0; i < 12; i++) {
-        const button = document.createElement('button');
-        button.type = 'button';
-        button.classList.add('btn', 'btn-success', 'mb-2', 'mx-2');
+        const button = document.createElement('div');
+        button.type = 'div';
+        button.classList.add('col-2', 'border', 'mb-2', 'mx-2', 'border-hvid', 'bg-gron', 'rounded-3' );
         button.textContent = `${pad(startTime.getHours())}:${pad(startTime.getMinutes())}`;
         button.onclick = () => {
             if (selectedButton) {
-                selectedButton.classList.remove('btn-danger'); // Remove danger color from previously selected button
-                selectedButton.classList.remove('btn-primary');
+                selectedButton.classList.remove('bg-danger'); // Remove danger color from previously selected button
+                selectedButton.classList.add('bg-gron');
             }
-            button.classList.add('btn-danger'); // Add danger color to the clicked button
+            button.classList.remove('bg-gron');
+            button.classList.add('bg-danger'); // Add danger color to the clicked button
             selectedButton = button;
             document.getElementById('gTid').value = button.textContent;
         };

@@ -22,11 +22,12 @@ $custom-colors: (
 				"kasse":#5B9874,
 				"text":#4D5655,
 				"hvid":#ffff,
+				"gron":#53D26F
 );
 
-$form-check-input-bg: none;
-$form-check-input-checked-bg-color: #5B9874;
-$form-check-input-checked-border-color: #346C4B;
+
+$form-check-input-checked-bg-color: #5B9874; !important
+$form-check-input-checked-border-color: #346C4B; !important
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
