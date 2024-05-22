@@ -35,26 +35,10 @@ require "settings/init.php";
             </div>
         </div>
         <div class="col-6">
-            <div class="diamond">
-                <div class="row g-2">
-                    <?php
-                    $produkter = $db->sql("SELECT * FROM diamanter");
-                    foreach ($produkter as $produkt) {
-                        ?>
-                        <div class="col-4">
-                            <div class="d-flex">
-                                <img src="img/golf.webp" alt="" class="img-fluid square">
-                                <div class="sqcontent text-center">
-                                    <?php
-                                    echo $produkt->diamantNavn;
-                                    ?>
-                                </div>
+            <div>
+                <img class="img-fluid" src="img/diamant.webp" alt="">
+                <div class="col-2 mx-auto">
 
-                            </div>
-                        </div>
-                        <?php
-                    }
-                    ?>
                 </div>
             </div>
         </div>
