@@ -50,7 +50,7 @@ if (!empty($_POST["data"])) {
             </div>
         </div>
         <div class="col-6">
-            <div class="bg-kasse rounded-3 mx-5 p-2 text-hvid text-center fs-1 overskrift">
+            <div class="bg-kasse rounded-3 mx-5 p-1 text-hvid text-center fs-1 overskrift">
                 Ledige tider
             </div>
 
@@ -128,7 +128,10 @@ if (!empty($_POST["data"])) {
     }
 
     const now = new Date();
-    const startTime = getNextQuarterHour(new Date(now));
+    const startTime = new Date();
+    startTime.setHours(17);
+    startTime.setMinutes(30);
+    startTime.setSeconds(0);
 
     for (let i = 0; i < 12; i++) {
         const button = document.createElement('div');
