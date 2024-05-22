@@ -4,12 +4,12 @@ require "settings/init.php";
 if (!empty($_POST["data"])) {
     $data = $_POST["data"];
 
-    $sql = "INSERT INTO golfbooking (gTid, gPersons, gNavn, gMail) VALUES(:gTid, :gPersons, :gNavn, :gMail)";
-    $bind = [":gTid" => $data["gTid"], ":gPersons" => $data["gPersons"], ":gNavn" => $data["gNavn"], ":gMail" => $data["gMail"]];
+    $sql = "INSERT INTO blossombooking (bTid, bPerson, bNavn, bMail, bCom) VALUES(:bTid, :bPerson, :bNavn, :bMail, :bCom)";
+    $bind = [":bTid" => $data["bTid"], ":bPerson" => $data["bPerson"], ":bNavn" => $data["bNavn"], ":bMail" => $data["bMail"], ":bCom" => $data["bCom"]];
 
     $db->sql($sql, $bind, false);
 
-    echo "Din tid er nu Booket. <a href='booking.php'>Book en tid mere <a/>";
+    echo "Din tid er nu Booket. <a href='booking-blossom.php'>Book en tid mere <a/>";
     exit;
 }
 
@@ -38,15 +38,14 @@ if (!empty($_POST["data"])) {
     <div class="row g-2">
         <div class="col-6">
             <div class="col-12">
-                <img class="rounded-3 object-fit-cover " src="img/golf.webp" alt=""
+                <img class="rounded-3 object-fit-cover " src="img/restaurant.webp" alt=""
                      style="height: 400px; width: 100%; object-position: 50% 25%;">
             </div>
             <div class="col-12 rounded-3 bg-kasse mt-2 p-3">
                 <p class="text-hvid">
-                    Både hotellet og golfbanen ligger i naturskønne omgivelser med udsigt over fjorden, og derfor er en
-                    tur på golfbanen hos os særligt attraktivt.
-                    Holbæk Golfklub ligger blot 10 minutter fra vores hotel, så når du har spist dig mæt i vores lækre
-                    morgenmadsbuffet, er der ikke langt til, at du står på banen.
+                    En hyggelig restaurant med havudsigt.
+                    Her går vi meget op i de danske råvarer og betjening i øjenhøjde. Vores menu er simpel og vi går
+                    selvfølgelig op i allergener så tilføj gerne en kommentar eller kontakt en tjener.
                 </p>
             </div>
         </div>
@@ -65,21 +64,26 @@ if (!empty($_POST["data"])) {
                 </div>
 
                 <div class="col-9 ms-5">
-                    <input type="hidden" id="gTid" name="data[gTid]">
+                    <input type="hidden" id="bTid" name="data[bTid]">
                     <div class="mt-3 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                        <label for="gPersons" class="form-label">Antal personer</label>
-                        <input type="number" class="form-control" id="gPersons" name="data[gPersons]" placeholder="">
+                        <label for="bPerson" class="form-label">Antal personer</label>
+                        <input type="number" class="form-control" id="bPerson" name="data[bPerson]" placeholder="">
 
                     </div>
 
                     <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                        <label for="gNavn" class="form-label">Fulde navn</label>
-                        <input type="text" class="form-control" id="gNavn" name="data[gNavn]" placeholder="">
+                        <label for="bNavn" class="form-label">Fulde navn</label>
+                        <input type="text" class="form-control" id="bNavn" name="data[bNavn]" placeholder="">
                     </div>
 
                     <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                        <label for="gMail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="gMail" name="data[gMail]" placeholder="">
+                        <label for="bMail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="bMail" name="data[bMail]" placeholder="">
+                    </div>
+
+                    <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
+                        <label for="bCom" class="form-label">Tilføj kommentar</label>
+                        <input type="text" class="form-control" id="bCom" name="data[bCom]" placeholder="">
                     </div>
 
                     <div class="form-check text-hvid overskrift fw-semibold fs-6 mt-4 ms-2 mb-1 fw-semibold">
@@ -124,7 +128,10 @@ if (!empty($_POST["data"])) {
     }
 
     const now = new Date();
-    const startTime = getNextQuarterHour(new Date(now));
+    const startTime = new Date();
+    startTime.setHours(17);
+    startTime.setMinutes(30);
+    startTime.setSeconds(0);
 
     for (let i = 0; i < 12; i++) {
         const button = document.createElement('div');
