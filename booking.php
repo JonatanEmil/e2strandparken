@@ -9,7 +9,8 @@ if (!empty($_POST["data"])) {
 
     $db->sql($sql, $bind, false);
 
-    echo "Produktet er nu indsat. Indsæt et produkt mere";
+    echo "Din tid er nu Booket. <a href='booking.php'>Book en tid mere <a/>";
+    exit;
 }
 
 ?>
@@ -53,51 +54,47 @@ if (!empty($_POST["data"])) {
             <div class="bg-kasse rounded-3 mx-5 p-2 text-hvid text-center fs-1 overskrift">
                 Ledige tider
             </div>
-            <div>
-                <div class="mt-2">
-                    <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-5 text-hvid" id="time-buttons">
+
+            <form action="booking.php" method="post">
+                <div>
+                    <div class="mt-2">
+                        <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-5 text-hvid"
+                             id="time-buttons">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-9 ms-5">
+                    <input type="hidden" id="gTid" name="data[gTid]">
+                    <div class="mt-3 ms-2 overskrift text-hvid fs-6 fw-semibold">
+                        <label for="gPersons" class="form-label">Antal personer</label>
+                        <input type="number" class="form-control" id="gPersons" name="data[gPersons]" placeholder="">
 
                     </div>
 
+                    <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
+                        <label for="gNavn" class="form-label">Fulde navn</label>
+                        <input type="text" class="form-control" id="gNavn" name="data[gNavn]" placeholder="">
+                    </div>
+
+                    <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
+                        <label for="gMail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="gMail" name="data[gMail]" placeholder="">
+                    </div>
+
+                    <div class="form-check text-hvid overskrift fw-semibold fs-6 mt-4 ms-2 mb-1 fw-semibold">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Bekræft <a href="#" class="">handelsbetingelserne</a>
+                        </label>
+                    </div>
+
+
+                    <div class="d-flex justify-content-center mt-2 me-2">
+                        <input class="btn btn-text fs-3 mt-2 justify-content-center px-5" type="submit" value="Bestil">
+                    </div>
+
                 </div>
-            </div>
-
-
-            <form action="booking.php" method="post">
-
-
-            <div class="col-9 ms-5">
-
-
-            <div class="mt-3 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                <label for="gPersons" class="form-label">Antal personer</label>
-                <input type="number" class="form-control" id="gPersons" name="data[gPersons]" placeholder="">
-
-            </div>
-
-            <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                <label for="gNavn" class="form-label">Fulde navn</label>
-                <input type="text" class="form-control" id="gNavn" name="data[gNavn]" placeholder="">
-            </div>
-
-            <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                <label for="gMail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="gMail" name="data[gMail]" placeholder="">
-            </div>
-
-            <div class="form-check text-hvid overskrift fw-semibold fs-6 mt-4 ms-2 mb-1 fw-semibold">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Bekræft <a href="#" class="">handelsbetingelserne</a>
-                </label>
-            </div>
-
-
-            <div class="d-flex justify-content-center mt-2 me-2">
-                <input class="btn btn-text fs-3 mt-2 justify-content-center px-5" type="submit" value="Bestil">
-            </div>
-
-            </div>
             </form>
 
         </div>
@@ -132,7 +129,7 @@ if (!empty($_POST["data"])) {
     for (let i = 0; i < 12; i++) {
         const button = document.createElement('div');
         button.type = 'div';
-        button.classList.add('col-2', 'border', 'mb-2', 'mx-2', 'border-hvid', 'bg-gron', 'rounded-3' );
+        button.classList.add('col-2', 'border', 'mb-2', 'mx-2', 'border-hvid', 'bg-gron', 'rounded-3');
         button.textContent = `${pad(startTime.getHours())}:${pad(startTime.getMinutes())}`;
         button.onclick = () => {
             if (selectedButton) {
