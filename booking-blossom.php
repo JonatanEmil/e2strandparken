@@ -4,12 +4,12 @@ require "settings/init.php";
 if (!empty($_POST["data"])) {
     $data = $_POST["data"];
 
-    $sql = "INSERT INTO golfbooking (gTid, gPersons, gNavn, gMail) VALUES(:gTid, :gPersons, :gNavn, :gMail)";
-    $bind = [":gTid" => $data["gTid"], ":gPersons" => $data["gPersons"], ":gNavn" => $data["gNavn"], ":gMail" => $data["gMail"]];
+    $sql = "INSERT INTO blossombooking (bTid, bPerson, bNavn, bMail, bCom) VALUES(:bTid, :bPerson, :bNavn, :bMail, :bCom)";
+    $bind = [":bTid" => $data["bTid"], ":bPerson" => $data["bPerson"], ":bNavn" => $data["bNavn"], ":bMail" => $data["bMail"], ":bCom" => $data["bCom"]];
 
     $db->sql($sql, $bind, false);
 
-    echo "Din tid er nu Booket. <a href='booking.php'>Book en tid mere <a/>";
+    echo "Din tid er nu Booket. <a href='booking-blossom.php'>Book en tid mere <a/>";
     exit;
 }
 

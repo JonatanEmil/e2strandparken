@@ -9,7 +9,7 @@ if (!empty($_POST["data"])) {
 
     $db->sql($sql, $bind, false);
 
-    echo "Din tid er nu Booket. <a href='booking.php'>Book en tid mere <a/>";
+    echo "Din tid er nu Booket. <a href='booking-golf.php'>Book en tid mere <a/>";
     exit;
 }
 
