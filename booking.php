@@ -54,13 +54,17 @@ if (!empty($_POST["data"])) {
                 Ledige tider
             </div>
             <div>
-                <div class="mt-2 d-flex justify-content-center ">
-                    <div class="flex-wrap mt-2 mx-5" id="time-buttons">
+                <div class="mt-2">
+                    <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-5" id="time-buttons">
 
                     </div>
 
                 </div>
             </div>
+
+
+            <div class="col-9 ms-5">
+
 
             <div class="mt-3 ms-2 overskrift text-hvid fs-6 fw-semibold">
                 <label for="room" class="form-label">Værelsesnummer</label>
@@ -86,13 +90,14 @@ if (!empty($_POST["data"])) {
             </div>
 
 
-
             <div class="d-flex justify-content-center mt-2 me-2">
                 <input class="btn btn-text fs-3 mt-2 justify-content-center px-5" type="submit" value="Bestil">
             </div>
 
+            </div>
 
         </div>
+
     </div>
 </div>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -121,16 +126,17 @@ if (!empty($_POST["data"])) {
     const startTime = getNextQuarterHour(new Date(now));
 
     for (let i = 0; i < 12; i++) {
-        const button = document.createElement('button');
-        button.type = 'button';
-        button.classList.add('btn', 'btn-success', 'mb-2', 'mx-2');
+        const button = document.createElement('div');
+        button.type = 'div';
+        button.classList.add('col-2', 'border', 'mb-2', 'mx-2', 'border-hvid', 'bg-gron', 'rounded-3' );
         button.textContent = `${pad(startTime.getHours())}:${pad(startTime.getMinutes())}`;
         button.onclick = () => {
             if (selectedButton) {
-                selectedButton.classList.remove('btn-danger'); // Remove danger color from previously selected button
-                selectedButton.classList.remove('btn-primary');
+                selectedButton.classList.remove('bg-danger'); // Remove danger color from previously selected button
+                selectedButton.classList.add('bg-gron');
             }
-            button.classList.add('btn-danger'); // Add danger color to the clicked button
+            button.classList.remove('bg-gron');
+            button.classList.add('bg-danger'); // Add danger color to the clicked button
             selectedButton = button;
             document.getElementById('gTid').value = button.textContent;
         };
