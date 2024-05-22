@@ -24,9 +24,9 @@ $custom-colors: (
 				"hvid":#ffff,
 );
 
-$form-check-input-bg: none;
-$form-check-input-checked-bg-color: #5B9874;
-$form-check-input-checked-border-color: #346C4B;
+
+$form-check-input-checked-bg-color: #5B9874; !important
+$form-check-input-checked-border-color: #346C4B; !important
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 

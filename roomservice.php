@@ -178,7 +178,7 @@
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
                         <p class="mb-0">Virgin Mojito m. brombær</p>
                         <div class="counter-container ms-3 d-flex">
                             <button class="btn bg-pink me-2 decrement">-</button>
@@ -230,7 +230,7 @@
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
                         <p class="mb-0">Fanta</p>
                         <div class="counter-container ms-3 d-flex">
                             <button class="btn bg-pink me-2 decrement">-</button>
@@ -285,7 +285,7 @@
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
                         <p class="mb-0">Toast</p>
                         <div class="counter-container ms-3 d-flex">
                             <button class="btn me-2 decrement">-</button>
@@ -315,11 +315,17 @@
                 <input type="email" class="form-control" id="email" name="data[room]" placeholder="">
             </div>
 
-            <div class="form-check text-hvid overskrift fw-semibold fs-6 mt-2 ms-2">
+            <div class="form-check text-hvid overskrift fw-semibold fs-6 mt-4 ms-2 mb-1 fw-semibold">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
                     Bekræft <a href="#" class="">handelsbetingelserne</a>
                 </label>
+            </div>
+
+
+
+            <div class="d-flex justify-content-center mt-2 me-2">
+            <input class="btn btn-text fs-3 mt-2 justify-content-center px-5" type="submit" value="Bestil">
             </div>
 
 
