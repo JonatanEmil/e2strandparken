@@ -37,11 +37,13 @@ require "settings/init.php";
         <div class="col-6">
             <div class="">
                 <img class="img-fluid" src="img/diamant.webp" alt="">
-                <div class="row position-relative d-flex justify-content-center dtext">
-                    <div class="col-3 offset-5 mx-auto"><a href="">Book Golf</a></div>
-                    <div class="w-100"></div>
-                    <div class="col-3 mx-auto"><a href="">Book Golf</a></div>
-                    <div class="col-3 mx-auto"><a href="">Book Golf</a></div>
+                <div class="row position-relative d-flex justify-content-center dtext text-center">
+                    <div class="col-12 mb-5"><a href="" class="link-hvid">Book Golf</a></div>
+                    <div class="col-5 my-5 ms-4 ps-5"><a href="" class="link-hvid">Book Golf</a></div>
+                    <div class="col-5 my-5 pe-5 me-4"><a href="" class="link-hvid">Book Golf</a></div>
+                    <div class="col-4 my-5"><a href="" class="link-hvid">Book Golf</a></div>
+                    <div class="col-4 my-5"><a href="" class="link-hvid">Book Golf</a></div>
+                    <div class="col-4 my-5"><a href="" class="link-hvid">Book Golf</a></div>
                 </div>
             </div>
         </div>
