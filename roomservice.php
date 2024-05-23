@@ -31,7 +31,9 @@
                 <p class="fs-3 text-hvid text-center overskrift pt-2">COCKTAILS</p>
                 <div class="mini p-3">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <p class="mb-0">Espresso Martini</p>
+                        <div class="d-flex align-items-center">
+                       <p class="pris pe-2 pt-2">99,00,-</p> <p class="mb-0">Espresso Martini</p>
+                        </div>
                         <div class="counter-container ms-3 d-flex">
                             <button class="btn bg-pink me-2 decrement">-</button>
                             <div class="ps-2 pe-2 text-center counter pt-2">0</div>
@@ -40,7 +42,9 @@
                     </div>
 
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <p class="mb-0">Old Fashioned</p>
+                        <div class="d-flex align-items-center">
+                        <p class="pris pe-2 pt-2">99,00,-</p><p class="mb-0">Old Fashioned</p>
+                        </div>
                         <div class="counter-container ms-3 d-flex">
                             <button class="btn bg-pink me-2 decrement">-</button>
                             <div class="ps-2 pe-2 text-center counter pt-2">0</div>
@@ -49,7 +53,9 @@
                     </div>
 
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <p class="mb-0">Dark´N´Stormy</p>
+                        <div class="d-flex align-items-center">
+                        <p class="pris pe-2 pt-2">99,00,-</p><p class="mb-0">Dark´N´Stormy</p>
+                        </div>
                         <div class="counter-container ms-3 d-flex">
                             <button class="btn bg-pink me-2 decrement">-</button>
                             <div class="ps-2 pe-2 text-center counter pt-2">0</div>
@@ -58,7 +64,9 @@
                     </div>
 
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <p class="mb-0">Strawberry Daiquiri</p>
+                        <div class="d-flex align-items-center">
+                        <p class="pris pe-2 pt-2">99,00,-</p><p class="mb-0">Strawberry Daiquiri</p>
+                        </div>
                         <div class="counter-container ms-3 d-flex">
                             <button class="btn bg-pink me-2 decrement">-</button>
                             <div class="ps-2 pe-2 text-center counter pt-2">0</div>
@@ -67,7 +75,9 @@
                     </div>
 
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <p class="mb-0">Cosmopolitan</p>
+                        <div class="d-flex align-items-center">
+                        <p class="pris pe-2 pt-2">99,00,-</p> <p class="mb-0">Cosmopolitan</p>
+                        </div>
                         <div class="counter-container ms-3 d-flex">
                             <button class="btn bg-pink me-2 decrement">-</button>
                             <div class="ps-2 pe-2 text-center counter pt-2">0</div>
@@ -75,7 +85,9 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <p class="mb-0">Long Island Iced Tea</p>
+                        <div class="d-flex align-items-center">
+                        <p class="pris pe-2 pt-2">99,00,-</p> <p class="mb-0">Long Island Iced Tea</p>
+                        </div>
                         <div class="counter-container ms-3 d-flex">
                             <button class="btn bg-pink me-2 decrement">-</button>
                             <div class="ps-2 pe-2 text-center counter pt-2">0</div>
@@ -83,7 +95,9 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <p class="mb-0">Pina Colada</p>
+                        <div class="d-flex align-items-center">
+                        <p class="pris pe-2 pt-2">99,00,-</p> <p class="mb-0">Pina Colada</p>
+                        </div>
                         <div class="counter-container ms-3 d-flex">
                             <button class="btn bg-pink me-2 decrement">-</button>
                             <div class="ps-2 pe-2 text-center counter pt-2">0</div>
@@ -91,7 +105,9 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <p class="mb-0">Bramble</p>
+                        <div class="d-flex align-items-center">
+                        <p class="pris pe-2 pt-2">99,00,-</p><p class="mb-0">Bramble</p>
+                        </div>
                         <div class="counter-container ms-3 d-flex">
                             <button class="btn bg-pink me-2 decrement">-</button>
                             <div class="ps-2 pe-2 text-center counter pt-2">0</div>
@@ -99,7 +115,9 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <p class="mb-0">Mojito</p>
+                        <div class="d-flex align-items-center">
+                        <p class="pris pe-2 pt-2">99,00,-</p> <p class="mb-0">Mojito</p>
+                        </div>
                         <div class="counter-container ms-3 d-flex">
                             <button class="btn bg-pink me-2 decrement">-</button>
                             <div class="ps-2 pe-2 text-center counter pt-2">0</div>
@@ -108,7 +126,9 @@
                     </div>
 
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <p class="mb-0">Filur</p>
+                        <div class="d-flex align-items-center">
+                        <p class="pris pe-2 pt-2">99,00,-</p><p class="mb-0">Filur</p>
+                        </div>
                         <div class="counter-container ms-3 d-flex">
                             <button class="btn bg-pink me-2 decrement">-</button>
                             <div class="ps-2 pe-2 text-center counter pt-2">0</div>
@@ -117,7 +137,9 @@
                     </div>
 
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <p class="mb-0">Moscow Mule</p>
+                        <div class="d-flex align-items-center">
+                        <p class="pris pe-2 pt-2">99,00,-</p><p class="mb-0">Moscow Mule</p>
+                        </div>
                         <div class="counter-container ms-3 d-flex">
                             <button class="btn bg-pink me-2 decrement">-</button>
                             <div class="ps-2 pe-2 text-center counter pt-2">0</div>
@@ -126,7 +148,9 @@
                     </div>
 
                     <div class="d-flex justify-content-between align-items-center">
-                        <p class="mb-0">Gin Hass</p>
+                        <div class="d-flex align-items-center">
+                        <p class="pris pe-2 pt-2">99,00,-</p> <p class="mb-0">Gin Hass</p>
+                        </div>
                         <div class="counter-container ms-3 d-flex">
                             <button class="btn bg-pink me-2 decrement">-</button>
                             <div class="ps-2 pe-2 text-center counter pt-2">0</div>
@@ -146,7 +170,9 @@
                 <p class="fs-3 text-hvid text-center overskrift pt-2">MOCKTAILS</p>
                 <div class="mini p-3">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <p class="mb-0">Espresso Tonic m. citrus</p>
+                        <div class="d-flex align-items-center">
+                            <p class="pris pe-2 pt-2">99,00,-</p> <p class="mb-0">Espresso Tonic m. citrus</p>
+                        </div>
                         <div class="counter-container ms-3 d-flex">
                             <button class="btn bg-pink me-2 decrement">-</button>
                             <div class="ps-2 pe-2 text-center counter pt-2">0</div>
