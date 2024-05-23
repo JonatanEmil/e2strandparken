@@ -23,6 +23,9 @@
                  style="height: 200px; width: 100%; object-position: 50% 58%;">
         </div>
 
+        <!-- en php sætning der laver boxes hver gang drinktypeid skifter. Hvis det er for svært så lav 4 php sætninger -->
+
+
         <div class="col-4 mt-2 rounded-3 mb-1">
             <div class="bg-kasse text-hvid rounded-3">
                 <p class="fs-3 text-hvid text-center overskrift pt-2">COCKTAILS</p>
