@@ -22,7 +22,7 @@ require "settings/init.php";
 <br>
 <div class="container">
     <div class="row">
-        <div class="row pb-4 border-bottom border-2 border-hvid" >
+        <div class="row pb-4 border-bottom border-2 border-kasse" >
         <div class="col ps-5">
             <img class="rounded-2" src="img/vinsmagning.webp">
         </div>
@@ -41,8 +41,8 @@ require "settings/init.php";
     <br><br>
     <div class="container">
         <div class="row">
-            <div class="row pb-4 border-bottom border-2 border-hvid">
-            <div class="col">
+            <div class="row pb-4 border-bottom border-2 border-kasse">
+            <div class="col-6">
                 <div class=" ps-3 pt-2">
                     <p class="fs-1 overskrift fw-medium"> Flow Yoga</p>
                     <p class="fs-5">For nybegyndere</p>
@@ -53,7 +53,7 @@ require "settings/init.php";
                     <p>Du er velkommen til at medbringe din egen måtte.</p>
                 </div>
             </div>
-            <div class="col ps-5">
+            <div class="col-6 img-fluid d-flex justify-content-end me-4">
                 <img class="rounded-2" src="img/yoga.webp">
             </div>
         </div>
@@ -61,7 +61,7 @@ require "settings/init.php";
         <br><br>
         <div class="container">
             <div class="row">
-                <div class="row pb-4 border-bottom border-2 border-hvid">
+                <div class="row pb-4 border-bottom border-2 border-kasse">
                     <div class="col ps-4">
                         <img class="rounded-2" src="img/madsmagning.webp">
                     </div>
@@ -80,17 +80,17 @@ require "settings/init.php";
             <br><br>
             <div class="container">
                 <div class="row">
-                    <div class="col pt-4">
+                    <div class="col-6 pt-4">
                         <p class="fs-1 overskrift fw-medium ">Valentines dag</p>
-                        <p>Gør Valentinsdag til en uforglemmelig begivenhed med et <br>
-                            ophold på Hotel Strandparken. Book jeres romantiske getaway <br>
+                        <p>Gør Valentinsdag til en uforglemmelig begivenhed med et
+                            ophold på Hotel Strandparken. Book jeres romantiske getaway
                             i dag og lad os sørge for, at I fejrer kærligheden på bedste vis.</p>
                         <p>Giv en oplevelse din partner aldrig vil glemme. Mere infomation <br>
                             findes på vores hjemmeside.</p>
                         <p class="fst-italic">Tidspunkt. d. 14-16/02 - Valentinesweekend</p>
                     </div>
-                    <div class="col ps-5">
-                        <img class="rounded-2" src="img/valentines.webp">
+                    <div class="col d-flex justify-content-end">
+                        <img class="rounded-2 img-fluid" src="img/valentines.webp">
                     </div>
                 </div>
                 <br>
