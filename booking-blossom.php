@@ -116,7 +116,7 @@ if (!empty($_POST["data"])) {
 
     function getNextQuarterHour(date) {
         const minutes = date.getMinutes();
-        const nextQuarterHour = Math.ceil(minutes / 15) * 15;
+        const nextQuarterHour = Math.ceil(minutes / 30) * 30;
         if (nextQuarterHour === 60) {
             date.setHours(date.getHours() + 1);
             date.setMinutes(0);
@@ -134,6 +134,11 @@ if (!empty($_POST["data"])) {
     startTime.setSeconds(0);
 
     for (let i = 0; i < 12; i++) {
+        //if (){
+        if (now > startTime) {
+            startTime.setMinutes(startTime.getMinutes() + 30);
+            continue;
+        }
         const button = document.createElement('div');
         button.type = 'div';
         button.classList.add('col-2', 'border', 'mb-2', 'mx-2', 'border-hvid', 'bg-gron', 'rounded-3');
@@ -149,12 +154,13 @@ if (!empty($_POST["data"])) {
             document.getElementById('bTid').value = button.textContent;
         };
         timeButtonsContainer.appendChild(button);
-        startTime.setMinutes(startTime.getMinutes() + 15);
+        startTime.setMinutes(startTime.getMinutes() + 30);
 
         // Insert line break after every 4 buttons
         if ((i + 1) % 4 === 0) {
             timeButtonsContainer.appendChild(document.createElement('br'));
         }
+   // }
     }
 </script>
 
