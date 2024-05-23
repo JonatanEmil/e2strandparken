@@ -38,12 +38,15 @@ require "settings/init.php";
             <div class="position-relative">
                 <img class="img-fluid" src="img/diamant.webp" alt="">
                 <div class="row position-absolute d-flex justify-content-center dtext text-center">
-                    <div class="col-12 mb-5"><a href="" class="link-hvid">Book Golf</a></div>
-                    <div class="col-5 my-5 ms-4 ps-5"><a href="" class="link-hvid">Book Golf</a></div>
-                    <div class="col-5 my-5 pe-5 me-4"><a href="" class="link-hvid">Book Golf</a></div>
-                    <div class="col-4 my-5"><a href="" class="link-hvid">Book Golf</a></div>
-                    <div class="col-4 my-5"><a href="" class="link-hvid">Book Golf</a></div>
-                    <div class="col-4 my-5"><a href="" class="link-hvid">Book Golf</a></div>
+                    <div class="col-12 mb-5"><a href="" class="link-hvid">Book <br> Golf</a></div>
+                    <div class="col-5 ms-4 ps-5 my-4 pb-2"><a href="" class="link-hvid">Restaurant <br> Blossom</a></div>
+                    <div class="col-5 pe-5 me-4 my-4 pb-2"><a href="" class="link-hvid">Forlæng <br> Ophold</a></div>
+                    <div class="col-4 my-5 pb-2"><a href="" class="link-hvid">Room <br> Service</a></div>
+                    <div class="col-4 my-5 pb-2"><a href="" class="link-hvid"></a></div>
+                    <div class="col-4 my-5 pb-2"><a href="" class="link-hvid">Arrangementer</a></div>
+                    <div class="col-5 my-2 ms-4 ps-5"><a href="" class="link-hvid">Oplev <br> området</a></div>
+                    <div class="col-5 my-2 pe-5 me-4"><a href="" class="link-hvid">Book <br> en cykeltur</a></div>
+                    <div class="col-12 mt-5"><a href="" class="link-hvid">Book <br> museums <br> besøg</a></div>
                 </div>
             </div>
         </div>

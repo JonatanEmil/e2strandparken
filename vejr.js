@@ -19,7 +19,7 @@ function weather() {
         .then(req => req.json())
         .then(res => {
             console.log(res);
-            const temp = res.hourly.temperature_2m[currentHour];
+            const temp = Math.round( res.hourly.temperature_2m[currentHour]);
             todayTemp.innerHTML = temp;
             todayWeatherIcon.src = 'weaImg/' + getWeatherIcon(res.hourly.weather_code[currentHour]);
             todayWeatherIcon.alt = 'weaImg/' + getWeatherIcon(res.hourly.weather_code[currentHour]);
