@@ -22,7 +22,7 @@ require "settings/init.php";
 <br>
 <div class="container">
     <div class="row">
-        <div class="row pb-4 border-bottom border-2 border-hvid" >
+        <div class="row pb-4 border-bottom border-2 border-kasse" >
             <div class="col ps-5">
                 <img class="rounded-2" src="img/tur.webp" height="300">
             </div>
@@ -40,16 +40,16 @@ require "settings/init.php";
     <br><br>
     <div class="container">
         <div class="row">
-            <div class="row pb-4 border-bottom border-2 border-hvid">
+            <div class="row pb-4 border-bottom border-2 border-kasse">
                 <div class="col">
-                    <div class=" ps-3 pt-2">
+                    <div class=" ps-4 pt-4">
                         <p class="fs-1 overskrift fw-medium"> Lær træerne at kende</p>
-                        <p>Gå en tur i Strandparken, hvor i finder et bredt udvalg af træer.
+                        <p class="me-3">Gå en tur i Strandparken, hvor i finder et bredt udvalg af træer.
                             Find en brochure i lobbyen med information om alle de danske træer som i kan finde i området.
                             Gå ud og bliv klogere!</p>
                     </div>
                 </div>
-                <div class="col ps-5">
+                <div class="col me-4 d-flex justify-content-end">
                     <img class="rounded-2" src="img/tree.webp" height="300">
                 </div>
             </div>
@@ -57,12 +57,12 @@ require "settings/init.php";
         <br><br>
         <div class="container">
             <div class="row">
-                <div class="row pb-4 border-bottom border-2 border-hvid">
+                <div class="row pb-4 border-bottom border-2 border-kasse">
                     <div class="col ps-4">
                         <img class="rounded-2" src="img/golf2.webp" height="300">
                     </div>
                     <div class="col">
-                        <div class="ps-3 pt-4">
+                        <div class="ps-3 pt-4 me-2">
                             <p class="fs-1 overskrift fw-medium">Tag ud og spil golf </p>
                             <p>Hvis i gerne vil ud og bevæge jer, kan i tage ud hen og spille golf på den nærlæggende golfbane.
                                 Golfklubben er fra 1964, og består af en bane med 18 huller, 70 par.
@@ -77,7 +77,7 @@ require "settings/init.php";
             <br><br>
             <div class="container">
                 <div class="row">
-                    <div class="row pb-4 border-bottom border-2 border-hvid">
+                    <div class="row pb-4 border-bottom border-2 border-kasse">
                     <div class="col pt-4">
                         <p class="fs-1 overskrift fw-medium ">Holbæk havn</p>
                         <p> Et kort stykke fra hotellet ligger Holbæk havn, som skaber liv til byen. Her kan man tage ned og spise en lækker is. Derudover er det tæt på centrum,
@@ -87,7 +87,7 @@ require "settings/init.php";
                         <i class="fa-solid fa-car p-2 "></i><p class="pt-1">4 min</p><i class="fa-solid fa-person-walking ms-5 p-2"></i><p class="pt-1">25 min</p>
                     </div>
                     </div>
-                    <div class="col ps-5">
+                    <div class="col ps-5 me-4 d-flex justify-content-end">
                         <img class="rounded-2" src="img/havn.webp" height="300">
                     </div>
                 </div>
@@ -95,10 +95,10 @@ require "settings/init.php";
                 <br><br>
                 <div class="container">
                     <div class="row">
-                            <div class="col ps-4">
+                            <div class="col-6 bg-primary">
                                 <img class="rounded-2" src="img/museum.webp" height="300">
                             </div>
-                            <div class="col">
+                            <div class="col-6">
                                 <div class="ps-3 pt-4">
                                     <p class="fs-1 overskrift fw-medium">Museum Vestsjælland</p>
                                     <p>På Holbæk museum kan man både se særudstillinger og faste udstillinger. Derudover er der arrangementer man kan tilmede
