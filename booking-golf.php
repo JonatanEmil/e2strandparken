@@ -51,7 +51,7 @@ if (!empty($_POST["data"])) {
             </div>
         </div>
         <div class="col-6">
-            <div class="bg-kasse rounded-3 mx-5 p-1 text-hvid text-center fs-1 overskrift">
+            <div class="bg-kasse rounded-3 mx-5 p-1 text-hvid text-center fs-1 overskrift fw-semibold">
                 Ledige tider
             </div>
 
