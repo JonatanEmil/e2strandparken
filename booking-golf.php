@@ -12,8 +12,12 @@ if (!empty($_POST["data"])) {
     echo "Din tid er nu Booket. <a href='booking-golf.php'>Book en tid mere <a/>";
     exit;
 }
-
 ?>
+
+<!-- referer til samme side ?(const)
+ if const = url, lav modal
+ -->
+
 <!DOCTYPE html>
 <html lang="da">
 <head>
