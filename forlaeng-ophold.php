@@ -15,7 +15,7 @@ if (!empty($_POST["data"])) {
 ?>
 
 <!-- referer til samme side ?(const)
- if const = url, lav modal
+ if const = url, lav modal hovsa
  -->
 
 <!DOCTYPE html>
