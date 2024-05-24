@@ -4,20 +4,16 @@ require "settings/init.php";
 if (!empty($_POST["data"])) {
     $data = $_POST["data"];
 
-    $sql = "INSERT INTO golfbooking (gTid, gPersons, gNavn, gMail) VALUES(:gTid, :gPersons, :gNavn, :gMail)";
-    $bind = [":gTid" => $data["gTid"], ":gPersons" => $data["gPersons"], ":gNavn" => $data["gNavn"], ":gMail" => $data["gMail"]];
+    $sql = "INSERT INTO cykelbooking (cTid, cPerson, cNavn, cMail, cCom) VALUES(:cTid, :cPerson, :cNavn, :cMail, :cCom)";
+    $bind = [":cTid" => $data["cTid"], ":cPerson" => $data["cPerson"], ":cNavn" => $data["cNavn"], ":cMail" => $data["cMail"], ":cCom" => $data["cCom"]];
 
     $db->sql($sql, $bind, false);
 
-    echo "Din tid er nu Booket. <a href='booking-golf.php'>Book en tid mere <a/>";
+    echo "Din tid er nu Booket. <a href='booking-cykel.php'>Book en tid mere <a/>";
     exit;
 }
+
 ?>
-
-<!-- referer til samme side ?(const)
- if const = url, lav modal
- -->
-
 <!DOCTYPE html>
 <html lang="da">
 <head>
@@ -37,20 +33,18 @@ if (!empty($_POST["data"])) {
 <body class="bg-baggrund">
 
 <?php include "navbar.php"; ?>
-
 <div class="container pt-2">
     <div class="row g-2">
         <div class="col-6">
             <div class="col-12">
-                <img class="rounded-3 object-fit-cover " src="img/golf.webp" alt=""
+                <img class="rounded-3 object-fit-cover " src="img/cykel.webp" alt="picture of bikes"
                      style="height: 400px; width: 100%; object-position: 50% 25%;">
             </div>
             <div class="col-12 rounded-3 bg-kasse mt-2 p-3">
                 <p class="text-hvid">
-                    Både hotellet og golfbanen ligger i naturskønne omgivelser med udsigt over fjorden, og derfor er en
-                    tur på golfbanen hos os særligt attraktivt.
-                    Holbæk Golfklub ligger blot 10 minutter fra vores hotel, så når du har spist dig mæt i vores lækre
-                    morgenmadsbuffet, er der ikke langt til, at du står på banen.
+                    Hotellet ligger i naturskønne omgivelser og et stenkast fra hotellet ligger der en sti langsvandet
+                    som man kan cykle en god tur på. Stien fører bl.a ned i havnen eller man kan cykle ind til byen.
+                    Betal når du henter nøgle i receptionen. Pris 30,- for 24 timer
                 </p>
             </div>
         </div>
@@ -59,31 +53,36 @@ if (!empty($_POST["data"])) {
                 Ledige tider
             </div>
 
-            <form action="booking.php" method="post">
+            <form action="booking-cykel.php" method="post">
                 <div>
                     <div class="mt-2">
-                        <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-0 text-hvid"
+                        <div class="row g-2 text-center d-flex justify-content-center mt-4 mx-0 text-hvid"
                              id="time-buttons">
                         </div>
                     </div>
                 </div>
 
                 <div class="col-9 ms-5">
-                    <input type="hidden" id="gTid" name="data[gTid]">
+                    <input type="hidden" id="cTid" name="data[cTid]">
                     <div class="mt-3 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                        <label for="gPersons" class="form-label">Antal personer</label>
-                        <input type="number" class="form-control" id="gPersons" name="data[gPersons]" placeholder="">
+                        <label for="cPerson" class="form-label">Antal personer</label>
+                        <input type="number" class="form-control" id="cPerson" name="data[cPerson]" placeholder="">
 
                     </div>
 
                     <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                        <label for="gNavn" class="form-label">Fulde navn</label>
-                        <input type="text" class="form-control" id="gNavn" name="data[gNavn]" placeholder="">
+                        <label for="cNavn" class="form-label">Fulde navn</label>
+                        <input type="text" class="form-control" id="cNavn" name="data[cNavn]" placeholder="">
                     </div>
 
                     <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                        <label for="gMail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="gMail" name="data[gMail]" placeholder="">
+                        <label for="cMail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="cMail" name="data[cMail]" placeholder="">
+                    </div>
+
+                    <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
+                        <label for="cCom" class="form-label">Tilføj kommentar</label>
+                        <input type="text" class="form-control" id="cCom" name="data[cCom]" placeholder="">
                     </div>
 
                     <div class="form-check text-hvid overskrift fw-semibold fs-6 mt-4 ms-2 mb-1 fw-semibold">
@@ -157,4 +156,3 @@ if (!empty($_POST["data"])) {
 
 </body>
 </html>
-

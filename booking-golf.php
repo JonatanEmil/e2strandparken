@@ -50,7 +50,7 @@ if (!empty($_POST["data"])) {
                     Både hotellet og golfbanen ligger i naturskønne omgivelser med udsigt over fjorden, og derfor er en
                     tur på golfbanen hos os særligt attraktivt.
                     Holbæk Golfklub ligger blot 10 minutter fra vores hotel, så når du har spist dig mæt i vores lækre
-                    morgenmadsbuffet, er der ikke langt til, at du står på banen.
+                    morgenmadsbuffet, er der ikke langt til, at du står på banen. Betal når du møder op til din booking. Priser fra 250,-
                 </p>
             </div>
         </div>
@@ -62,7 +62,7 @@ if (!empty($_POST["data"])) {
             <form action="booking.php" method="post">
                 <div>
                     <div class="mt-2">
-                        <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-5 text-hvid"
+                        <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-0 text-hvid"
                              id="time-buttons">
                         </div>
                     </div>

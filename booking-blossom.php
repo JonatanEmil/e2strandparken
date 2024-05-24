@@ -38,7 +38,7 @@ if (!empty($_POST["data"])) {
     <div class="row g-2">
         <div class="col-6">
             <div class="col-12">
-                <img class="rounded-3 object-fit-cover " src="img/restaurant.webp" alt=""
+                <img class="rounded-3 object-fit-cover " src="img/restaurant.webp" alt="picture of chairs by the water"
                      style="height: 400px; width: 100%; object-position: 50% 25%;">
             </div>
             <div class="col-12 rounded-3 bg-kasse mt-2 p-3">
@@ -57,7 +57,7 @@ if (!empty($_POST["data"])) {
             <form action="booking-blossom.php" method="post">
                 <div>
                     <div class="mt-2">
-                        <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-5 text-hvid"
+                        <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-0 text-hvid"
                              id="time-buttons">
                         </div>
                     </div>
