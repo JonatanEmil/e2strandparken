@@ -4,7 +4,7 @@ require "settings/init.php";
 if (!empty($_POST["data"])) {
     $data = $_POST["data"];
 
-    $sql = "INSERT INTO golfbooking (mDag, mPerson, mNavn, mMail) VALUES(:mDag, :mPerson, :mNavn, :mMail)";
+    $sql = "INSERT INTO museum (mDag, mPerson, mNavn, mMail) VALUES(:mDag, :mPerson, :mNavn, :mMail)";
     $bind = [":mDag" => $data["mDag"], ":mPerson" => $data["mPerson"], ":mNavn" => $data["mNavn"], ":mMail" => $data["mMail"]];
 
     $db->sql($sql, $bind, false);
@@ -42,7 +42,7 @@ if (!empty($_POST["data"])) {
     <div class="row g-2">
         <div class="col-6">
             <div class="col-12">
-                <img class="rounded-3 object-fit-cover " src="img/golf.webp" alt=""
+                <img class="rounded-3 object-fit-cover " src="img/museum.webp" alt=""
                      style="height: 400px; width: 100%; object-position: 50% 25%;">
             </div>
             <div class="col-12 rounded-3 bg-kasse mt-2 p-3">
@@ -110,43 +110,29 @@ if (!empty($_POST["data"])) {
     const timeButtonsContainer = document.getElementById('time-buttons');
     let selectedButton = null;
 
-    function pad(num) {
-        return String(num).padStart(2, '0');
+    function formatDate(date) {
+        const day = String(date.getDate()).padStart(2, '0');
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        return `${day}-${month}`;
     }
 
-    function getNextQuarterHour(date) {
-        const minutes = date.getMinutes();
-        const nextQuarterHour = Math.ceil(minutes / 15) * 15;
-        if (nextQuarterHour === 60) {
-            date.setHours(date.getHours() + 1);
-            date.setMinutes(0);
-        } else {
-            date.setMinutes(nextQuarterHour);
-        }
-        date.setSeconds(0);
-        return date;
-    }
-
-    const now = new Date();
-    const startTime = getNextQuarterHour(new Date(now));
-
+    const today = new Date();
     for (let i = 0; i < 12; i++) {
         const button = document.createElement('div');
         button.type = 'div';
         button.classList.add('col-2', 'border', 'mb-2', 'mx-2', 'border-hvid', 'bg-gron', 'rounded-3');
-        button.textContent = `${pad(startTime.getHours())}:${pad(startTime.getMinutes())}`;
+        button.textContent = formatDate(new Date(today.getFullYear(), today.getMonth(), today.getDate() + i));
         button.onclick = () => {
             if (selectedButton) {
-                selectedButton.classList.remove('bg-danger'); // Remove danger color from previously selected button
+                selectedButton.classList.remove('bg-danger');
                 selectedButton.classList.add('bg-gron');
             }
             button.classList.remove('bg-gron');
-            button.classList.add('bg-danger'); // Add danger color to the clicked button
+            button.classList.add('bg-danger');
             selectedButton = button;
-            document.getElementById('mTid').value = button.textContent;
+            document.getElementById('mDag').value = button.textContent;
         };
         timeButtonsContainer.appendChild(button);
-        startTime.setMinutes(startTime.getMinutes() + 15);
 
         // Insert line break after every 4 buttons
         if ((i + 1) % 4 === 0) {
@@ -154,6 +140,7 @@ if (!empty($_POST["data"])) {
         }
     }
 </script>
+
 
 </body>
 </html>
