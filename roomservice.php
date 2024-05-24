@@ -30,7 +30,7 @@ require "settings/init.php";
         <!-- en php sætning der laver boxes hver gang drinktypeid skifter. Hvis det er for svært så lav 4 php sætninger -->
 
 
-        <?php
+        <!--/*php
 
         $sql = "SELECT * FROM drinks INNER JOIN drinktypes ON drinkType = typeId";
         $drinks = $db->sql($sql);
@@ -43,12 +43,22 @@ require "settings/init.php";
 
         foreach ($groupedDrinks as $typeName => $drinks) {
 
-        ?>
+        */-->
 
-        <div class="col-6 mt-2 rounded-3 mb-1">
+        <div class="col-4 mt-2 rounded-3 mb-1">
             <div class="bg-kasse text-hvid rounded-3">
-
-                <p class="fs-3 text-hvid text-center overskrift pt-2"><?php echo $typeName; ?></p>
+                <?php
+                $sql = "SELECT * FROM drinks INNER JOIN drinktypes ON drinkType = typeId WHERE typeId = 1";
+                $drinks = $db->sql($sql);
+                // Assuming $drinks is an array or an iterable object
+                if (!empty($drinks)) {
+                    // Get the type name from the first drink
+                    $typeName = $drinks[0]->typeName;
+                } else {
+                    $typeName = "Unknown Type"; // Default value in case there are no drinks
+                }
+                ?>
+                <p class="fs-3 text-hvid text-center overskrift pt-2"><?php echo $typeName ; ?></p>
 
                 <div class=" p-3">
                     <?php foreach ($drinks as $drink) { ?>
@@ -73,9 +83,113 @@ require "settings/init.php";
         </div>
 
         <?php
-        }
+        //}
         ?>
+        <div class="col-4 mt-2 rounded-3 mb-1">
+            <div class="bg-kasse text-hvid rounded-3">
+                <?php
+                $sql = "SELECT * FROM drinks INNER JOIN drinktypes ON drinkType = typeId WHERE typeId = 2";
+                $drinks = $db->sql($sql);
+                // Assuming $drinks is an array or an iterable object
+                if (!empty($drinks)) {
+                    // Get the type name from the first drink
+                    $typeName = $drinks[1]->typeName;
+                } else {
+                    $typeName = "Unknown Type"; // Default value in case there are no drinks
+                }
+                ?>
+                <p class="fs-3 text-hvid text-center overskrift pt-2"><?php echo $typeName ; ?></p>
 
+                <div class=" p-3">
+                    <?php foreach ($drinks as $drink) { ?>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <p class="pris pe-2 mb-0"><?php echo $drink->drinkPrice?>,-</p>
+                                <p class="mb-0"><?php echo $drink->drinkName?></p>
+                            </div>
+                            <div class="counter-container ms-3 d-flex">
+                                <button class="btn bg-pink me-2 decrement">-</button>
+                                <div class="ps-2 pe-2 text-center counter pt-2">0</div>
+                                <button class="btn bg-pink ms-2 increment">+</button>
+                            </div>
+                        </div>
+
+                    <?php } ?>
+
+                </div>
+
+
+            </div>
+            <div class="bg-kasse text-hvid rounded-3 mt-2">
+                <?php
+                $sql = "SELECT * FROM drinks INNER JOIN drinktypes ON drinkType = typeId WHERE typeId = 3";
+                $drinks = $db->sql($sql);
+                // Assuming $drinks is an array or an iterable object
+                if (!empty($drinks)) {
+                    // Get the type name from the first drink
+                    $typeName = $drinks[2]->typeName;
+                } else {
+                    $typeName = "Unknown Type"; // Default value in case there are no drinks
+                }
+                ?>
+                <p class="fs-3 text-hvid text-center overskrift pt-2"><?php echo $typeName ; ?></p>
+
+                <div class=" p-3">
+                    <?php foreach ($drinks as $drink) { ?>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <p class="pris pe-2 mb-0"><?php echo $drink->drinkPrice?>,-</p>
+                                <p class="mb-0"><?php echo $drink->drinkName?></p>
+                            </div>
+                            <div class="counter-container ms-3 d-flex">
+                                <button class="btn bg-pink me-2 decrement">-</button>
+                                <div class="ps-2 pe-2 text-center counter pt-2">0</div>
+                                <button class="btn bg-pink ms-2 increment">+</button>
+                            </div>
+                        </div>
+
+                    <?php } ?>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-4 mt-2 rounded-3 mb-1 pb-">
+            <div class="bg-kasse text-hvid rounded-3">
+                <?php
+                $sql = "SELECT * FROM drinks INNER JOIN drinktypes ON drinkType = typeId WHERE typeId = 4";
+                $drinks = $db->sql($sql);
+                // Assuming $drinks is an array or an iterable object
+                if (!empty($drinks)) {
+                    // Get the type name from the first drink
+                    $typeName = $drinks[3]->typeName;
+                } else {
+                    $typeName = "Unknown Type"; // Default value in case there are no drinks
+                }
+                ?>
+                <p class="fs-3 text-hvid text-center overskrift pt-2"><?php echo $typeName ; ?></p>
+
+                <div class=" p-3">
+                    <?php foreach ($drinks as $drink) { ?>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center">
+                                <p class="pris pe-2 mb-0"><?php echo $drink->drinkPrice?>,-</p>
+                                <p class="mb-0"><?php echo $drink->drinkName?></p>
+                            </div>
+                            <div class="counter-container ms-3 d-flex">
+                                <button class="btn bg-pink me-2 decrement">-</button>
+                                <div class="ps-2 pe-2 text-center counter pt-2">0</div>
+                                <button class="btn bg-pink ms-2 increment">+</button>
+                            </div>
+                        </div>
+
+                    <?php } ?>
+
+                </div>
+
+
+            </div>
 
 
 
