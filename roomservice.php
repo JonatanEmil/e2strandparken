@@ -34,20 +34,24 @@ require "settings/init.php";
 
         $sql = "SELECT * FROM drinks INNER JOIN drinktypes ON drinkType = typeId";
         $drinks = $db->sql($sql);
-        foreach ($drinks as $drink)
 
-        {
+        $groupedDrinks = [];
+        foreach ($drinks as $drink) {
+            $groupedDrinks[$drink->typeName][] = $drink;
+
+        }
+
+        foreach ($groupedDrinks as $typeName => $drinks) {
 
         ?>
 
-        <div class="col-4 mt-2 rounded-3 mb-1">
+        <div class="col-6 mt-2 rounded-3 mb-1">
             <div class="bg-kasse text-hvid rounded-3">
 
-                <?php
-                 echo $drink->typeName;
-                ?>
+                <p class="fs-3 text-hvid text-center overskrift pt-2"><?php echo $typeName; ?></p>
 
                 <div class=" p-3">
+                    <?php foreach ($drinks as $drink) { ?>
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <div class="d-flex align-items-center">
                             <p class="pris pe-2 mb-0"><?php echo $drink->drinkPrice?>,-</p>
@@ -60,6 +64,8 @@ require "settings/init.php";
                         </div>
                     </div>
 
+                    <?php } ?>
+
                 </div>
 
 
@@ -71,210 +77,6 @@ require "settings/init.php";
         ?>
 
 
-        <div class="col-4 mt-2 rounded-3">
-            <div class="bg-kasse text-hvid rounded-3">
-                <p class="fs-3 text-hvid text-center overskrift pt-2">MOCKTAILS</p>
-                <div class=" p-3">
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <div class="d-flex align-items-center">
-                            <p class="pris pe-2 mb-0">99,00,-</p>
-                            <p class="mb-0">Espresso Tonic m. citrus</p>
-                        </div>
-                        <div class="counter-container ms-3 d-flex">
-                            <button class="btn bg-pink me-2 decrement">-</button>
-                            <div class="ps-2 pe-2 text-center counter pt-2">0</div>
-                            <button class="btn bg-pink ms-2 increment">+</button>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <div class="d-flex align-items-center">
-                            <p class="pris pe-2 mb-0">99,00,-</p>
-                            <p class="mb-0">Virgin Pomegranate</p>
-                        </div>
-                        <div class="counter-container ms-3 d-flex">
-                            <button class="btn bg-pink me-2 decrement">-</button>
-                            <div class="ps-2 pe-2 text-center counter pt-2">0</div>
-                            <button class="btn bg-pink ms-2 increment">+</button>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <div class="d-flex align-items-center">
-                            <p class="pris pe-2 mb-0">99,00,-</p>
-                            <p class="mb-0">Orange Blossom</p>
-                        </div>
-                        <div class="counter-container ms-3 d-flex">
-                            <button class="btn bg-pink me-2 decrement">-</button>
-                            <div class="ps-2 pe-2 text-center counter pt-2">0</div>
-                            <button class="btn bg-pink ms-2 increment">+</button>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <div class="d-flex align-items-center">
-                            <p class="pris pe-2 mb-0">99,00,-</p>
-                            <p class="mb-0">Tropical Mango</p>
-                        </div>
-                        <div class="counter-container ms-3 d-flex">
-                            <button class="btn bg-pink me-2 decrement">-</button>
-                            <div class="ps-2 pe-2 text-center counter pt-2">0</div>
-                            <button class="btn bg-pink ms-2 increment">+</button>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center mb-1">
-                        <div class="d-flex align-items-center">
-                            <p class="pris pe-2 mb-0">99,00,-</p>
-                            <p class="mb-0">Virgin Mojito m. brombær</p>
-                        </div>
-                        <div class="counter-container ms-3 d-flex">
-                            <button class="btn bg-pink me-2 decrement">-</button>
-                            <div class="ps-2 pe-2 text-center counter pt-2">0</div>
-                            <button class="btn bg-pink ms-2 increment">+</button>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="bg-kasse text-hvid rounded-3">
-                <p class="fs-3 text-hvid text-center overskrift pt-2 mt-2">ØL OG VAND</p>
-                <div class=" p-3">
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <div class="d-flex align-items-center">
-                            <p class="pris pe-2 mb-0">99,00,-</p>
-                            <p class="mb-0">Vand m. is</p>
-                        </div>
-                        <div class="counter-container ms-3 d-flex">
-                            <button class="btn bg-pink me-2 decrement">-</button>
-                            <div class="ps-2 pe-2 text-center counter pt-2">0</div>
-                            <button class="btn bg-pink ms-2 increment">+</button>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <div class="d-flex align-items-center">
-                            <p class="pris pe-2 mb-0">99,00,-</p>
-                            <p class="mb-0">Grøn Tuborg</p>
-                        </div>
-                        <div class="counter-container ms-3 d-flex">
-                            <button class="btn bg-pink me-2 decrement">-</button>
-                            <div class="ps-2 pe-2 text-center counter pt-2">0</div>
-                            <button class="btn bg-pink ms-2 increment">+</button>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <div class="d-flex align-items-center">
-                            <p class="pris pe-2 mb-0">99,00,-</p>
-                            <p class="mb-0">Tuborg Classic</p>
-                        </div>
-                        <div class="counter-container ms-3 d-flex">
-                            <button class="btn bg-pink me-2 decrement">-</button>
-                            <div class="ps-2 pe-2 text-center counter pt-2">0</div>
-                            <button class="btn bg-pink ms-2 increment">+</button>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <div class="d-flex align-items-center">
-                            <p class="pris pe-2 mb-0">99,00,-</p>
-                            <p class="mb-0">Coca-Cola</p>
-                        </div>
-                        <div class="counter-container ms-3 d-flex">
-                            <button class="btn bg-pink me-2 decrement">-</button>
-                            <div class="ps-2 pe-2 text-center counter pt-2">0</div>
-                            <button class="btn bg-pink ms-2 increment">+</button>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center mb-0">
-                        <div class="d-flex align-items-center">
-                            <p class="pris pe-2 mb-0">99,00,-</p>
-                            <p class="mb-0">Fanta</p>
-                        </div>
-                        <div class="counter-container ms-3 d-flex">
-                            <button class="btn bg-pink me-2 decrement">-</button>
-                            <div class="ps-2 pe-2 text-center counter pt-2">0</div>
-                            <button class="btn bg-pink ms-2 increment">+</button>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="col-4 mt-2 rounded-3">
-            <div class="bg-kasse text-hvid rounded-3 btn-hvid">
-                <p class="fs-3 text-hvid text-center overskrift pt-2">SNACKS</p>
-                <div class="p-3">
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <div class="d-flex align-items-center">
-                            <p class="pris pe-2 mb-0">99,00,-</p>
-                            <p class="mb-0">Blandet saltede nødder</p>
-                        </div>
-                        <div class="counter-container ms-3 d-flex">
-                            <button class="btn bg-pink me-2 decrement">-</button>
-                            <div class="ps-2 pe-2 text-center counter pt-2">0</div>
-                            <button class="btn bg-pink ms-2 increment">+</button>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <div class="d-flex align-items-center">
-                            <p class="pris pe-2 mb-0">99,00,-</p>
-                            <p class="mb-0">Pringles Original</p>
-                        </div>
-                        <div class="counter-container ms-3 d-flex">
-                            <button class="btn bg-pink me-2 decrement">-</button>
-                            <div class="ps-2 pe-2 text-center counter pt-2">0</div>
-                            <button class="btn bg-pink ms-2 increment">+</button>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <div class="d-flex align-items-center">
-                            <p class="pris pe-2 mb-0">99,00,-</p>
-                            <p class="mb-0">Ostepops</p>
-                        </div>
-                        <div class="counter-container ms-3 d-flex">
-                            <button class="btn bg-pink me-2 decrement">-</button>
-                            <div class="ps-2 pe-2 text-center counter pt-2">0</div>
-                            <button class="btn bg-pink ms-2 increment">+</button>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <div class="d-flex align-items-center">
-                            <p class="pris pe-2 mb-0">99,00,-</p>
-                            <p class="mb-0">Nachos m. ost</p>
-                        </div>
-                        <div class="counter-container ms-3 d-flex">
-                            <button class="btn bg-pink me-2 decrement">-</button>
-                            <div class="ps-2 pe-2 text-center counter pt-2">0</div>
-                            <button class="btn bg-pink ms-2 increment">+</button>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center mb-1">
-                        <div class="d-flex align-items-center">
-                            <p class="pris pe-2 mb-0">99,00,-</p>
-                            <p class="mb-0">Toast</p>
-                        </div>
-                        <div class="counter-container ms-3 d-flex">
-                            <button class="btn me-2 decrement">-</button>
-                            <div class="ps-2 pe-2 text-center counter pt-2">0</div>
-                            <button class="btn ms-2 increment">+</button>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
 
 
             <div class="mt-4 pt-1 ms-2 overskrift text-hvid fs-6 fw-semibold">

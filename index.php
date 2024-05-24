@@ -34,6 +34,9 @@ require "settings/init.php";
                 </div>
             </div>
         </div>
+
+
+
         <div class="col-6">
             <div class="position-relative">
                 <img class="img-fluid" src="img/diamant.webp" alt="">
