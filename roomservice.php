@@ -58,7 +58,7 @@ require "settings/init.php";
                     $typeName = "Unknown Type"; // Default value in case there are no drinks
                 }
                 ?>
-                <p class="fs-3 text-hvid text-center overskrift pt-2"><?php echo $typeName ; ?></p>
+                <p class="fs-3 text-hvid text-center overskrift pt-2 mb-0"><?php echo $typeName ; ?></p>
 
                 <div class=" p-3">
                     <?php foreach ($drinks as $drink) { ?>
@@ -98,7 +98,7 @@ require "settings/init.php";
                     $typeName = "Unknown Type"; // Default value in case there are no drinks
                 }
                 ?>
-                <p class="fs-3 text-hvid text-center overskrift pt-2"><?php echo $typeName ; ?></p>
+                <p class="fs-3 text-hvid text-center overskrift pt-2 mb-0"><?php echo $typeName ; ?></p>
 
                 <div class=" p-3">
                     <?php foreach ($drinks as $drink) { ?>
@@ -132,9 +132,9 @@ require "settings/init.php";
                     $typeName = "Unknown Type"; // Default value in case there are no drinks
                 }
                 ?>
-                <p class="fs-3 text-hvid text-center overskrift pt-2"><?php echo $typeName ; ?></p>
+                <p class="fs-3 text-hvid text-center overskrift pt-2 mb-0"><?php echo $typeName ; ?></p>
 
-                <div class=" p-3">
+                <div class=" p-3 pb-2 ">
                     <?php foreach ($drinks as $drink) { ?>
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <div class="d-flex align-items-center">
@@ -168,7 +168,7 @@ require "settings/init.php";
                     $typeName = "Unknown Type"; // Default value in case there are no drinks
                 }
                 ?>
-                <p class="fs-3 text-hvid text-center overskrift pt-2"><?php echo $typeName ; ?></p>
+                <p class="fs-3 text-hvid text-center overskrift pt-2 mb-0"><?php echo $typeName ; ?></p>
 
                 <div class=" p-3">
                     <?php foreach ($drinks as $drink) { ?>
