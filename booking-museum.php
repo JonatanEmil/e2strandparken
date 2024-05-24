@@ -4,12 +4,12 @@ require "settings/init.php";
 if (!empty($_POST["data"])) {
     $data = $_POST["data"];
 
-    $sql = "INSERT INTO golfbooking (gTid, gPersons, gNavn, gMail) VALUES(:gTid, :gPersons, :gNavn, :gMail)";
-    $bind = [":gTid" => $data["gTid"], ":gPersons" => $data["gPersons"], ":gNavn" => $data["gNavn"], ":gMail" => $data["gMail"]];
+    $sql = "INSERT INTO golfbooking (mDag, mPerson, mNavn, mMail) VALUES(:mDag, :mPerson, :mNavn, :mMail)";
+    $bind = [":mDag" => $data["mDag"], ":mPerson" => $data["mPerson"], ":mNavn" => $data["mNavn"], ":mMail" => $data["mMail"]];
 
     $db->sql($sql, $bind, false);
 
-    echo "Din tid er nu Booket. <a href='booking-golf.php'>Book en tid mere <a/>";
+    echo "Din tid er nu Booket. <a href='booking-museum.php'>Book en tid mere <a/>";
     exit;
 }
 ?>
@@ -59,7 +59,7 @@ if (!empty($_POST["data"])) {
                 Ledige tider
             </div>
 
-            <form action="booking.php" method="post">
+            <form action="booking-museum.php" method="post">
                 <div>
                     <div class="mt-2">
                         <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-0 text-hvid"
@@ -69,7 +69,7 @@ if (!empty($_POST["data"])) {
                 </div>
 
                 <div class="col-9 ms-5">
-                    <input type="hidden" id="gTid" name="data[gTid]">
+                    <input type="hidden" id="mDag" name="data[mDag]">
                     <div class="mt-3 ms-2 overskrift text-hvid fs-6 fw-semibold">
                         <label for="gPersons" class="form-label">Antal personer</label>
                         <input type="number" class="form-control" id="gPersons" name="data[gPersons]" placeholder="">
@@ -77,13 +77,13 @@ if (!empty($_POST["data"])) {
                     </div>
 
                     <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                        <label for="gNavn" class="form-label">Fulde navn</label>
-                        <input type="text" class="form-control" id="gNavn" name="data[gNavn]" placeholder="">
+                        <label for="mNavn" class="form-label">Fulde navn</label>
+                        <input type="text" class="form-control" id="mNavn" name="data[mNavn]" placeholder="">
                     </div>
 
                     <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                        <label for="gMail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="gMail" name="data[gMail]" placeholder="">
+                        <label for="mMail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="mMail" name="data[mMail]" placeholder="">
                     </div>
 
                     <div class="form-check text-hvid overskrift fw-semibold fs-6 mt-4 ms-2 mb-1 fw-semibold">
@@ -143,7 +143,7 @@ if (!empty($_POST["data"])) {
             button.classList.remove('bg-gron');
             button.classList.add('bg-danger'); // Add danger color to the clicked button
             selectedButton = button;
-            document.getElementById('gTid').value = button.textContent;
+            document.getElementById('mTid').value = button.textContent;
         };
         timeButtonsContainer.appendChild(button);
         startTime.setMinutes(startTime.getMinutes() + 15);

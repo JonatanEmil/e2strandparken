@@ -142,7 +142,7 @@ if (!empty($_POST["data"])) {
             button.classList.remove('bg-gron');
             button.classList.add('bg-danger'); // Add danger color to the clicked button
             selectedButton = button;
-            document.getElementById('gTid').value = button.textContent;
+            document.getElementById('cTid').value = button.textContent;
         };
         timeButtonsContainer.appendChild(button);
         startTime.setMinutes(startTime.getMinutes() + 15);
