@@ -43,14 +43,32 @@ require "settings/init.php";
                 <div class="row position-absolute d-flex justify-content-center dtext text-center">
                     <div class="col-12 mb-5"><a href="booking-golf.php" class="link-hvid">Book <br> Golf</a></div>
                     <div class="col-5 ms-4 ps-5 my-4 pb-2"><a href="booking-blossom.php" class="link-hvid">Restaurant <br> Blossom</a></div>
-                    <div class="col-5 pe-5 me-4 my-4 pb-2"><a href="" class="link-hvid">Forlæng <br> Ophold</a></div>
+                    <div class="col-5 pe-5 me-4 my-4 pb-2"><a href="forlaeng-ophold.php" class="link-hvid">Forlæng <br> Ophold</a></div>
                     <div class="col-4 my-5 pb-2"><a href="roomservice.php" class="link-hvid">Room <br> Service</a></div>
-                    <div class="col-4 my-5 pb-2"><a href="" class="link-hvid"><i class="fa-solid fa-play"></i></a></div>
+                    <div class="col-4 my-5 pb-2"><a href="" class="link-hvid" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-play"></i></a></div>
                     <div class="col-4 my-5 pb-2"><a href="arrangementer.php" class="link-hvid">Arrangementer</a></div>
                     <div class="col-5 my-2 ms-4 ps-5"><a href="oplevomraadet.php" class="link-hvid">Oplev <br> området</a></div>
-                    <div class="col-5 my-2 pe-5 me-4"><a href="" class="link-hvid">Book <br> en cykeltur</a></div>
-                    <div class="col-12 mt-5"><a href="" class="link-hvid">Book <br> museums <br> besøg</a></div>
+                    <div class="col-5 my-2 pe-5 me-4"><a href="booking-cykel.php" class="link-hvid">Book <br> en cykeltur</a></div>
+                    <div class="col-12 mt-5"><a href="booking-museum.php" class="link-hvid">Book <br> museums <br> besøg</a></div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>
