@@ -62,12 +62,12 @@ require "settings/init.php";
 
                 <div class=" p-3">
                     <?php foreach ($drinks as $drink) { ?>
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="d-flex align-items-center col-8 justify-content-start">
                                 <p class="pris pe-2 mb-0"><?php echo $drink->drinkPrice ?>,-</p>
                                 <p class="mb-0"><?php echo $drink->drinkName ?></p>
                             </div>
-                            <div class="counter-container ms-3 d-flex">
+                            <div class="counter-container ms-3 d-flex col-4 justify-content-end">
                                 <button class="btn bg-pink me-2 decrement"  data-price="<?php echo $drink->drinkPrice ?>">-</button>
                                 <div class="ps-2 pe-2 text-center counter pt-2">0</div>
                                 <button class="btn bg-pink ms-2 increment"  data-price="<?php echo $drink->drinkPrice ?>">+</button>
@@ -102,12 +102,12 @@ require "settings/init.php";
 
                 <div class=" p-3">
                     <?php foreach ($drinks as $drink) { ?>
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <div class="d-flex align-items-center">
+                        <div class="d-flex  align-items-center mb-3">
+                            <div class="d-flex align-items-center col-8 justify-content-start">
                                 <p class="pris pe-2 mb-0"><?php echo $drink->drinkPrice ?>,-</p>
                                 <p class="mb-0"><?php echo $drink->drinkName ?></p>
                             </div>
-                            <div class="counter-container ms-3 d-flex">
+                            <div class="counter-container ms-3 d-flex col-4 justify-content-end">
                                 <button class="btn bg-pink me-2 decrement"  data-price="<?php echo $drink->drinkPrice ?>">-</button>
                                 <div class="ps-2 pe-2 text-center counter pt-2">0</div>
                                 <button class="btn bg-pink ms-2 increment"  data-price="<?php echo $drink->drinkPrice ?>">+</button>
@@ -136,12 +136,12 @@ require "settings/init.php";
 
                 <div class=" p-3 pb-2 ">
                     <?php foreach ($drinks as $drink) { ?>
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="d-flex align-items-center col-8 justify-content-start">
                                 <p class="pris pe-2 mb-0"><?php echo $drink->drinkPrice ?>,-</p>
                                 <p class="mb-0"><?php echo $drink->drinkName ?></p>
                             </div>
-                            <div class="counter-container ms-3 d-flex">
+                            <div class="counter-container ms-3 d-flex col-4 justify-content-end">
                                 <button class="btn bg-pink me-2 decrement" data-price="<?php echo $drink->drinkPrice ?>">-</button>
                                 <div class="ps-2 pe-2 text-center counter pt-2">0</div>
                                 <button class="btn bg-pink ms-2 increment"  data-price="<?php echo $drink->drinkPrice ?>">+</button>
@@ -172,12 +172,12 @@ require "settings/init.php";
 
                 <div class=" p-3">
                     <?php foreach ($drinks as $drink) { ?>
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="d-flex align-items-center col-8 justify-content-start">
                                 <p class="pris pe-2 mb-0"><?php echo $drink->drinkPrice ?>,-</p>
                                 <p class="mb-0"><?php echo $drink->drinkName ?></p>
                             </div>
-                            <div class="counter-container ms-3 d-flex">
+                            <div class="counter-container ms-3 d-flex col-4 justify-content-end">
                                 <button class="btn bg-pink me-2 decrement" data-price="<?php echo $drink->drinkPrice ?>" >-</button>
                                 <div class="ps-2 pe-2 text-center counter pt-2">0</div>
                                 <button class="btn bg-pink ms-2 increment" data-price="<?php echo $drink->drinkPrice ?>">+</button>
