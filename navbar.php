@@ -52,11 +52,68 @@
     </div>
 
         <div class="d-flex justify-content-end m-2">
-        <button class="btn btn-sm" type="button"><i class="sprog fa-solid fa-globe"></i></button>
-        <button class="btn btn-sm" type="button"><i class="info fa-solid fa-circle-info"></i></button>
-        <button class="btn btn-sm" type="button"><i class="FAQ fa-solid fa-circle-question"></i></button>
+        <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#sprogModal"><i class="sprog fa-solid fa-globe"></i></button>
+        <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#infoModal"><i class="info fa-solid fa-circle-info"></i></button>
+        <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#helpModal"><i class="FAQ fa-solid fa-circle-question"></i></button>
         </div>
 
 </nav>
+
+<div class="modal fade" id="sprogModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Vælg sprog</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                English
+                Suomi
+                Svenska
+                Deutch
+                Etc.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Information om skærmen</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Her på skærmen kan du vælge...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Brug for hjælp?</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Tilkald medarbejder?
+                FAQ
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="https://kit.fontawesome.com/056ca3e665.js" crossorigin="anonymous"></script>
