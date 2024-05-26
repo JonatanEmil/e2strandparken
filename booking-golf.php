@@ -9,7 +9,7 @@ if (!empty($_POST["data"])) {
 
     $db->sql($sql, $bind, false);
 
-    echo "<a href='#'><a/>";
+   // echo "<a href='booking-golf.php'" + '?bestilling=1'+"><a/>";
     //exit;
 }
 ?>
@@ -59,7 +59,7 @@ if (!empty($_POST["data"])) {
                 Ledige tider
             </div>
 
-            <form action="booking.php" method="post">
+            <form action="booking-golf.php?bestil=1" method="post">
                 <div>
                     <div class="mt-2">
                         <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-0 text-hvid"
@@ -105,6 +105,7 @@ if (!empty($_POST["data"])) {
 
     </div>
 </div>
+<?php include "bestilmodal.php"?>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     const timeButtonsContainer = document.getElementById('time-buttons');
@@ -153,6 +154,26 @@ if (!empty($_POST["data"])) {
             timeButtonsContainer.appendChild(document.createElement('br'));
         }
     }
+    // Function to get query parameters
+    document.addEventListener("DOMContentLoaded", function() {
+        // Function to get query parameters
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                bestil: params.get('bestil')
+            };
+        }
+
+        // Get the query parameters
+        const params = getQueryParams();
+
+        // Check if 'bestil' equals '1' and open the modal
+        if (params.bestil === "1") {
+            // Open the modal using Bootstrap's modal method
+            const bestilModal = new bootstrap.Modal(document.getElementById('bestilModal'));
+            bestilModal.show();
+        }
+    });
 </script>
 
 </body>
