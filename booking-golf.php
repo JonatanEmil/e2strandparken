@@ -10,7 +10,7 @@ if (!empty($_POST["data"])) {
     $db->sql($sql, $bind, false);
 
     echo "<a href='#'><a/>";
-    exit;
+    //exit;
 }
 ?>
 

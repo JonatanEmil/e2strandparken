@@ -1,15 +1,15 @@
 <?php
 require "settings/init.php";
 
-if (!empty($_POST["data"])) {
-    $data = $_POST["data"];
+if (!empty($_POST["data"])) { //hvis vores post med data ikke er tom
+    $data = $_POST["data"]; //laver en variable af alt data i vores variable post bliver gemt i array'et
 
-    $sql = "INSERT INTO roomservice (rsRoom, rsName, rsMail) VALUES(:rsRoom, :rsName, :rsMail)";
-    $bind = [":rsRoom" => $data["rsRoom"], ":rsName" => $data["rsName"], ":rsMail" => $data["rsMail"]];
+    $sql = "INSERT INTO roomservice (rsRoom, rsName, rsMail) VALUES(:rsRoom, :rsName, :rsMail)"; //indsæt :rsRoom, :rsName, :rsMail i table roomservice, i rsRoom, rsName og rsMail
+    $bind = [":rsRoom" => $data["rsRoom"], ":rsName" => $data["rsName"], ":rsMail" => $data["rsMail"]]; //eks. bind gør at :rsRoom erstattes med "data" "rsRoom"
 
-    $db->sql($sql, $bind, false);
+    $db->sql($sql, $bind, false); //gemmer vores sql i db variablen. hvis vi henter noget = true, gør vi ikke, så false
 
-    echo "<a href='#'><a/>";
+    echo "<a href='#'><a/>"; // vis en hjemmeside (skal laves om til en modal)
     exit;
 }
 ?>
