@@ -1,5 +1,17 @@
 <?php
 require "settings/init.php";
+
+if (!empty($_POST["data"])) {
+    $data = $_POST["data"];
+
+    $sql = "INSERT INTO roomservice (rsRoom, rsName, rsMail) VALUES(:rsRoom, :rsName, :rsMail)";
+    $bind = [":rsRoom" => $data["rsRoom"], ":rsName" => $data["rsName"], ":rsMail" => $data["rsMail"]];
+
+    $db->sql($sql, $bind, false);
+
+    echo "<a href='#'><a/>";
+    exit;
+}
 ?>
 
 <html lang="da">
@@ -193,19 +205,19 @@ require "settings/init.php";
 
 
             <div class="mt-4 pt-1 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                <label for="room" class="form-label">Værelsesnummer</label>
-                <input type="number" class="form-control" id="room" name="data[room]" placeholder="">
+                <label for="rsRoom" class="form-label">Værelsesnummer</label>
+                <input type="number" class="form-control" id="rsRoom" name="data[rsRoom]" placeholder="">
 
             </div>
 
             <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                <label for="name" class="form-label">Fulde navn</label>
-                <input type="text" class="form-control" id="name" name="data[name]" placeholder="">
+                <label for="rsName" class="form-label">Fulde navn</label>
+                <input type="text" class="form-control" id="rsName" name="data[rsName]" placeholder="">
             </div>
 
             <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="data[email]" placeholder="">
+                <label for="rsMail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="rsMail" name="data[rsMail]" placeholder="">
             </div>
 
             <div class="form-check text-hvid overskrift fw-semibold fs-6 mt-4 ms-2 mb-1 fw-semibold">
