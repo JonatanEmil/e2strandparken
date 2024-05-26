@@ -38,9 +38,9 @@ require "settings/init.php";
 
 
         <div class="col-6">
-            <div class="position-relative"> <!-- position-relative: -->
+            <div class="position-relative"> <!-- position-relative: Denne plads er stadig gemt i dokumentet. Dens children er positioneret relativt til dette element nu med css.-->
                 <img class="img-fluid" src="img/diamant.webp" alt=""> <!-- billede som baggrund pga svært at hardcode diamanterne -->
-                <div class="row position-absolute d-flex justify-content-center dtext text-center"> <!-- postion-absolute:. d-text er vores egen klasse (se styles.scss) -->
+                <div class="row position-absolute d-flex justify-content-center dtext text-center"> <!-- postion-absolute: Denne plads er ikke gemt (ligesom et overlay). d-text er vores egen klasse (se styles.scss) -->
                     <div class="col-12 mb-5"><a href="booking-golf.php" class="link-hvid">Book <br> Golf</a></div> <!-- links der refererer til underside -->
                     <div class="col-5 ms-4 ps-5 my-4 pb-2"><a href="booking-blossom.php" class="link-hvid">Restaurant <br> Blossom</a></div>
                     <div class="col-5 pe-5 me-4 my-4 pb-2"><a href="forlaeng-ophold.php" class="link-hvid">Forlæng <br> Ophold</a></div>
