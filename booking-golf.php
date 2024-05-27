@@ -106,6 +106,7 @@ if (!empty($_POST["data"])) {
     </div>
 </div>
 <?php include "bestilmodal.php"?>
+<script src="bestilmodal.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     const timeButtonsContainer = document.getElementById('time-buttons');
@@ -154,26 +155,6 @@ if (!empty($_POST["data"])) {
             timeButtonsContainer.appendChild(document.createElement('br'));
         }
     }
-    // Function to get query parameters
-    document.addEventListener("DOMContentLoaded", function() {
-        // Function to get query parameters
-        function getQueryParams() {
-            const params = new URLSearchParams(window.location.search);
-            return {
-                bestil: params.get('bestil')
-            };
-        }
-
-        // Get the query parameters
-        const params = getQueryParams();
-
-        // Check if 'bestil' equals '1' and open the modal
-        if (params.bestil === "1") {
-            // Open the modal using Bootstrap's modal method
-            const bestilModal = new bootstrap.Modal(document.getElementById('bestilModal'));
-            bestilModal.show();
-        }
-    });
 </script>
 
 </body>

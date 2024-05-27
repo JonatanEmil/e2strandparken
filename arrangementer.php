@@ -53,8 +53,8 @@ require "settings/init.php";
                     <p>Du er velkommen til at medbringe din egen måtte.</p>
                 </div>
             </div>
-            <div class="col-6 img-fluid d-flex justify-content-end me-4">
-                <img class="rounded-2" src="img/yoga.webp">
+            <div class="col-6 d-flex justify-content-end">
+                <img class="img-fluid rounded-2" src="img/yoga.webp">
             </div>
         </div>
         </div>

@@ -9,8 +9,6 @@ if (!empty($_POST["data"])) { //hvis vores post med data ikke er tom
 
     $db->sql($sql, $bind, false); //gemmer vores sql i db variablen. hvis vi henter noget = true, gør vi ikke, så false
 
-    echo "<a href='#' data-bs-toggle='modal' data-bs-target='#bestilModal'><a/>"; // vis en hjemmeside (skal laves om til en modal)
-    exit;
 }
 ?>
 
@@ -203,7 +201,7 @@ if (!empty($_POST["data"])) { //hvis vores post med data ikke er tom
 
             </div>
 
-
+            <form action="roomservice.php?bestil=1" method="post">
             <div class="mt-4 pt-1 ms-2 overskrift text-hvid fs-6 fw-semibold">
                 <label for="rsRoom" class="form-label">Værelsesnummer</label>
                 <input type="number" class="form-control" id="rsRoom" name="data[rsRoom]" placeholder="">
@@ -234,29 +232,14 @@ if (!empty($_POST["data"])) { //hvis vores post med data ikke er tom
                 </div>
                 <input class="btn btn-text fs-3 mt-2 justify-content-center px-5" type="submit" value="Bestil">
             </div>
+            </form>
 
 
         </div>
     </div>
 </div>
-<div class="modal fade" id="bestilModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Tak for din bestilling</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                Tak for din bestilling
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>
-
+<?php include "bestilmodal.php"?>
+<script src="bestilmodal.js"></script>
 <script>
 
     // Function to update subtotal

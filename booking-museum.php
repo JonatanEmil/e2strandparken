@@ -59,7 +59,7 @@ if (!empty($_POST["data"])) {
                 Ledige tider
             </div>
 
-            <form action="booking-museum.php" method="post">
+            <form action="booking-museum.php?bestil=1" method="post">
                 <div>
                     <div class="mt-2">
                         <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-0 text-hvid"
@@ -105,6 +105,8 @@ if (!empty($_POST["data"])) {
 
     </div>
 </div>
+<?php include "bestilmodal.php"?>
+<script src="bestilmodal.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     const timeButtonsContainer = document.getElementById('time-buttons');

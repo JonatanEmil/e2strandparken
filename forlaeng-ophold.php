@@ -4,13 +4,13 @@ require "settings/init.php";
 if (!empty($_POST["data"])) {
     $data = $_POST["data"];
 
-    $sql = "INSERT INTO golfbooking (gTid, gPersons, gNavn, gMail) VALUES(:gTid, :gPersons, :gNavn, :gMail)";
-    $bind = [":gTid" => $data["gTid"], ":gPersons" => $data["gPersons"], ":gNavn" => $data["gNavn"], ":gMail" => $data["gMail"]];
+    $sql = "INSERT INTO golfbooking (fDag, fPerson, fNavn, fMail, fCom) VALUES(:fDag, :fPerson, :fNavn, :fMail, :fCom)";
+    $bind = [":fDag" => $data["fDag"], ":fPerson" => $data["fPerson"], ":fNavn" => $data["fNavn"], ":fMail" => $data["fMail"], ":fCom" => $data["fCom"]];
 
     $db->sql($sql, $bind, false);
 
-    echo "Din tid er nu Booket. <a href='booking-golf.php'>Book en tid mere <a/>";
-    exit;
+    //echo "Din tid er nu Booket. <a href='booking-golf.php'>Book en tid mere <a/>";
+    //exit;
 }
 ?>
 
@@ -59,7 +59,7 @@ if (!empty($_POST["data"])) {
                 Ledige tider
             </div>
 
-            <form action="booking.php" method="post">
+            <form action="forlaeng-ophold.php?bestil=1" method="post">
                 <div>
                     <div class="mt-2">
                         <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-5 text-hvid"
@@ -71,19 +71,23 @@ if (!empty($_POST["data"])) {
                 <div class="col-9 ms-5">
                     <input type="hidden" id="gTid" name="data[gTid]">
                     <div class="mt-3 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                        <label for="gPersons" class="form-label">Antal personer</label>
-                        <input type="number" class="form-control" id="gPersons" name="data[gPersons]" placeholder="">
+                        <label for="fPerson" class="form-label">Antal personer</label>
+                        <input type="number" class="form-control" id="fPerson" name="data[fPerson]" placeholder="">
 
                     </div>
 
                     <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                        <label for="gNavn" class="form-label">Fulde navn</label>
-                        <input type="text" class="form-control" id="gNavn" name="data[gNavn]" placeholder="">
+                        <label for="fNavn" class="form-label">Fulde navn</label>
+                        <input type="text" class="form-control" id="fNavn" name="data[fNavn]" placeholder="">
                     </div>
 
                     <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                        <label for="gMail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="gMail" name="data[gMail]" placeholder="">
+                        <label for="fMail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="fMail" name="data[fMail]" placeholder="">
+                    </div>
+                    <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
+                        <label for="fCom" class="form-label">Tilføj kommentar</label>
+                        <input type="text" class="form-control" id="fCom" name="data[fCom]" placeholder="">
                     </div>
 
                     <div class="form-check text-hvid overskrift fw-semibold fs-6 mt-4 ms-2 mb-1 fw-semibold">
@@ -105,6 +109,8 @@ if (!empty($_POST["data"])) {
 
     </div>
 </div>
+<?php include "bestilmodal.php"?>
+<script src="bestilmodal.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     const timeButtonsContainer = document.getElementById('time-buttons');
