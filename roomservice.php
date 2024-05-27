@@ -70,7 +70,7 @@ if (!empty($_POST["data"])) { //hvis vores post med data ikke er tom
                 ?>
                 <p class="fs-3 text-hvid text-center overskrift pt-2 mb-0"><?php echo $typeName; ?></p>
 
-                <div class=" p-3">
+                <div class=" p-3 pb-1 ">
                     <?php foreach ($drinks as $drink) { ?>
                         <div class="d-flex align-items-center mb-3">
                             <div class="d-flex align-items-center col-8 justify-content-start">
