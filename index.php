@@ -87,7 +87,7 @@ require "settings/init.php";
                 <a href="" class="link-navbar">English</a> <br>
                 <a href="" class="link-navbar">Deutsch</a> <br>
                 <a href="" class="link-navbar">Svenska</a> <br>
-                <a href="" class="link-navbar">Finsk</a>
+                <a href="" class="link-navbar">Suomi</a>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-navbar" data-bs-dismiss="modal">Luk</button>
