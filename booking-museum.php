@@ -42,21 +42,21 @@ if (!empty($_POST["data"])) {
     <div class="row g-2">
         <div class="col-6">
             <div class="col-12">
-                <img class="rounded-3 object-fit-cover " src="img/museum.webp" alt="Billede af to kvinder der kigger på kunst"
+                <img class="rounded-3 object-fit-cover " src="img/museum.webp"
+                     alt="Billede af to kvinder der kigger på kunst"
                      style="height: 400px; width: 100%; object-position: 50% 25%;">
             </div>
             <div class="col-12 rounded-3 bg-kasse mt-2 p-3">
                 <p class="text-hvid">
-                    Både hotellet og golfbanen ligger i naturskønne omgivelser med udsigt over fjorden, og derfor er en
-                    tur på golfbanen hos os særligt attraktivt.
-                    Holbæk Golfklub ligger blot 10 minutter fra vores hotel, så når du har spist dig mæt i vores lækre
-                    morgenmadsbuffet, er der ikke langt til, at du står på banen.
+                    På museum Vestsjælland er der forskellige udstillinger og arrangementer man kan melde sig til.
+                    Museet ligger blot 21 minutter væk på gåben eller 5 minutter i bil.
+                    Entré pris: 60 kr
                 </p>
             </div>
         </div>
         <div class="col-6">
             <div class="bg-kasse rounded-3 mx-5 p-1 text-hvid text-center fs-1 overskrift fw-semibold">
-                Ledige tider
+                Vælg dato
             </div>
 
             <form action="booking-museum.php?bestil=1" method="post">
@@ -105,7 +105,7 @@ if (!empty($_POST["data"])) {
 
     </div>
 </div>
-<?php include "bestilmodal.php"?>
+<?php include "bestilmodal.php" ?>
 <script src="bestilmodal.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script>
