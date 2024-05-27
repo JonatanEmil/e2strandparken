@@ -66,7 +66,7 @@ require "settings/init.php";
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Video der skulle kører her</h1>
+                <p class="modal-title fs-6" id="exampleModalLabel">Arrangementer der foregår på Hotel Strandparken</p>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body d-flex justify-content-center">
