@@ -24,7 +24,7 @@ require "settings/init.php";
     <div class="row">
         <div class="row pb-4 border-bottom border-2 border-kasse" >
         <div class="col ps-5">
-            <img class="rounded-2" src="img/vinsmagning.webp">
+            <img class="rounded-2" src="img/vinsmagning.webp" alt="På billedet er der folk, som er til vinsmagning">
         </div>
         <div class="col">
             <div class="pt-4">
@@ -54,7 +54,7 @@ require "settings/init.php";
                 </div>
             </div>
             <div class="col-6 d-flex justify-content-end">
-                <img class="img-fluid rounded-2" src="img/yoga.webp">
+                <img class="img-fluid rounded-2" src="img/yoga.webp" alt="Billede af folk der dyrker yoga">
             </div>
         </div>
         </div>
@@ -63,7 +63,7 @@ require "settings/init.php";
             <div class="row">
                 <div class="row pb-4 border-bottom border-2 border-kasse">
                     <div class="col ps-4">
-                        <img class="rounded-2" src="img/madsmagning.webp">
+                        <img class="rounded-2" src="img/madsmagning.webp" alt="Billede af folk der bestiller mad">
                     </div>
                     <div class="col">
                         <div class="ps-3 pt-4">
@@ -90,7 +90,7 @@ require "settings/init.php";
                         <p class="fst-italic">Tidspunkt. d. 14-16/02 - Valentinesweekend</p>
                     </div>
                     <div class="col d-flex justify-content-end">
-                        <img class="rounded-2 img-fluid" src="img/valentines.webp">
+                        <img class="rounded-2 img-fluid" src="img/valentines.webp" alt="Billede af blomster og gaver">
                     </div>
                 </div>
                 <br>
