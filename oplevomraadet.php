@@ -23,7 +23,7 @@ require "settings/init.php";
 <div class="container">
         <div class="row pb-4 border-bottom border-2 border-kasse" >
             <div class="col ps-4">
-                <img class="rounded-2" src="img/tur.webp" height="300">
+                <img class="rounded-2" src="img/tur.webp" height="300" alt="Billede af en sti">
             </div>
             <div class="col">
                 <div class="pt-4">
@@ -46,13 +46,13 @@ require "settings/init.php";
                     </div>
                 </div>
                 <div class="col me-4 d-flex justify-content-end">
-                    <img class="rounded-2" src="img/tree.webp" height="300">
+                    <img class="rounded-2" src="img/tree.webp" height="300" alt="Billeder af træer">
                 </div>
             </div>
         <br><br>
                 <div class="row pb-4 border-bottom border-2 border-kasse">
                     <div class="col ps-4">
-                        <img class="rounded-2" src="img/golf2.webp" height="300">
+                        <img class="rounded-2" src="img/golf2.webp" height="300" alt="Billede af en golfbane">
                     </div>
                     <div class="col">
                         <div class="ps-3 pt-4 me-2">
@@ -78,13 +78,13 @@ require "settings/init.php";
                     </div>
                     </div>
                     <div class="col ps-5 me-4 d-flex justify-content-end">
-                        <img class="rounded-2" src="img/havn.webp" height="300">
+                        <img class="rounded-2" src="img/havn.webp" height="300" alt="Billede af en havn">
                     </div>
                 </div>
                 <br><br>
                     <div class="row">
                             <div class="col-6">
-                                <img class="rounded-2 img-fluid" src="img/museum.webp" alt="" height="300">
+                                <img class="rounded-2 img-fluid" src="img/museum.webp" alt="Billede af to kvinder af kigger på kunst" height="300">
                             </div>
                             <div class="col-6">
                                 <div class="ps-3 pt-4">

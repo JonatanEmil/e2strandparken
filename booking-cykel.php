@@ -37,7 +37,7 @@ if (!empty($_POST["data"])) {
     <div class="row g-2">
         <div class="col-6">
             <div class="col-12">
-                <img class="rounded-3 object-fit-cover " src="img/cykel.webp" alt="picture of bikes"
+                <img class="rounded-3 object-fit-cover " src="img/cykel.webp" alt="Billede af cykler"
                      style="height: 400px; width: 100%; object-position: 50% 25%;">
             </div>
             <div class="col-12 rounded-3 bg-kasse mt-2 p-3">
