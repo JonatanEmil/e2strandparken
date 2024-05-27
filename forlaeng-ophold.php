@@ -60,7 +60,7 @@ if (!empty($_POST["data"])) {
             <form action="forlaeng-ophold.php?bestil=1" method="post">
                 <div>
                     <div class="mt-2">
-                        <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-5 text-hvid"
+                        <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-0 text-hvid"
                              id="time-buttons">
                         </div>
                     </div>
