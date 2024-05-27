@@ -52,7 +52,7 @@ require "settings/init.php";
                     <div class="col-5 pe-5 me-4 my-4 pb-2"><a href="forlaeng-ophold.php" class="link-hvid">Forlæng <br> Ophold</a></div>
                     <div class="col-4 my-5 pb-2"><a href="roomservice.php" class="link-hvid">Room <br> Service</a></div>
                     <div class="col-4 my-5 pb-2"><a href="" class="link-hvid" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-play"></i></a></div> <!-- link der refererer til modal (se modalvindue nederst) -->
-                    <div class="col-4 my-5 pb-2"><a href="arrangmenter.php" class="link-hvid">Arrangementer</a></div>
+                    <div class="col-4 my-5 pb-2"><a href="arrangementer.php" class="link-hvid">Arrangementer</a></div>
                     <div class="col-5 my-2 ms-4 ps-5"><a href="oplevomraadet.php" class="link-hvid">Oplev <br> området</a></div>
                     <div class="col-5 my-2 pe-5 me-4"><a href="booking-cykel.php" class="link-hvid">Book <br> en cykeltur</a></div>
                     <div class="col-12 mt-5"><a href="booking-museum.php" class="link-hvid">Book <br> museums <br> besøg</a></div>
@@ -87,7 +87,7 @@ require "settings/init.php";
                 <a href="" class="link-navbar">English</a> <br>
                 <a href="" class="link-navbar">Deutsch</a> <br>
                 <a href="" class="link-navbar">Svenska</a> <br>
-                <a href="" class="link-navbar">Finsk</a>
+                <a href="" class="link-navbar">Suomi</a>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-navbar" data-bs-dismiss="modal">Luk</button>
