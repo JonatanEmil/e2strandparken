@@ -50,7 +50,7 @@ if (!empty($_POST["data"])) {
                 <p class="text-hvid">
                     På museum Vestsjælland er der forskellige udstillinger og arrangementer man kan melde sig til.
                     Museet ligger blot 21 minutter væk på gåben eller 5 minutter i bil.
-                    Entré pris: 60 kr
+                <p class="fst-italic text-hvid">Entré pris: 60 kr. <p>
                 </p>
             </div>
         </div>

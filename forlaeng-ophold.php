@@ -49,6 +49,7 @@ if (!empty($_POST["data"])) {
                 <p class="text-hvid">
                     Brug for at mærke ‘The joy of missing out’ lidt flere dage? Så vælg til hvilken dato du vil blive
                     her! Ved at forlænge opholdet er det kun inklusiv overnatning.
+                <p class="fst-italic text-hvid"> Priser varierer. Betal i receptionen.<p>
                 </p>
             </div>
         </div>

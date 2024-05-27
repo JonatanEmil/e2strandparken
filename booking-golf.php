@@ -50,7 +50,8 @@ if (!empty($_POST["data"])) {
                     Både hotellet og golfbanen ligger i naturskønne omgivelser med udsigt over fjorden, og derfor er en
                     tur på golfbanen hos os særligt attraktivt.
                     Holbæk Golfklub ligger blot 10 minutter fra vores hotel, så når du har spist dig mæt i vores lækre
-                    morgenmadsbuffet, er der ikke langt til, at du står på banen. Betal når du møder op til din booking. Priser fra 250,-
+                    morgenmadsbuffet, er der ikke langt til, at du står på banen. Betal når du møder op til din booking.
+                <p class="fst-italic text-hvid"> Priser fra 250 kr. <p>
                 </p>
             </div>
         </div>
