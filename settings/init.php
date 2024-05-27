@@ -12,7 +12,7 @@ if(CONFIG_LIVE == 0){
     $DB_SERVER = "localhost";
     $DB_NAME = "strandparkscreen";
     $DB_USER = "root";
-    $DB_PASS = "";
+    $DB_PASS = "root";
 
 /*
     $DB_SERVER = "mysql5.unoeuro.com";

@@ -38,7 +38,7 @@ require "settings/init.php";
 
 
         <div class="col-6">
-            <div class="d-flex justify-content-end m-2">
+            <div class="d-flex justify-content-end">
                 <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#sprogModal"><i class="sprog fa-solid fa-globe"></i></button>
                 <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#infoModal"><i class="info fa-solid fa-circle-info"></i></button>
                 <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#helpModal"><i class="FAQ fa-solid fa-circle-question"></i></button>
@@ -52,7 +52,7 @@ require "settings/init.php";
                     <div class="col-5 pe-5 me-4 my-4 pb-2"><a href="forlaeng-ophold.php" class="link-hvid">Forlæng <br> Ophold</a></div>
                     <div class="col-4 my-5 pb-2"><a href="roomservice.php" class="link-hvid">Room <br> Service</a></div>
                     <div class="col-4 my-5 pb-2"><a href="" class="link-hvid" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-play"></i></a></div> <!-- link der refererer til modal (se modalvindue nederst) -->
-                    <div class="col-4 my-5 pb-2"><a href="arrangmenter.php" class="link-hvid">Arrangementer</a></div>
+                    <div class="col-4 my-5 pb-2"><a href="arrangementer.php" class="link-hvid">Arrangementer</a></div>
                     <div class="col-5 my-2 ms-4 ps-5"><a href="oplevomraadet.php" class="link-hvid">Oplev <br> området</a></div>
                     <div class="col-5 my-2 pe-5 me-4"><a href="booking-cykel.php" class="link-hvid">Book <br> en cykeltur</a></div>
                     <div class="col-12 mt-5"><a href="booking-museum.php" class="link-hvid">Book <br> museums <br> besøg</a></div>
@@ -66,7 +66,7 @@ require "settings/init.php";
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Video der skulle kører her</h1>
+                <p class="modal-title fs-6" id="exampleModalLabel">Arrangementer der foregår på Hotel Strandparken</p>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body d-flex justify-content-center">
@@ -76,7 +76,7 @@ require "settings/init.php";
     </div>
 </div>
 <div class="modal fade" id="sprogModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Vælg sprog</h1>
@@ -96,7 +96,7 @@ require "settings/init.php";
     </div>
 </div>
 <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Information om skærmen</h1>
@@ -116,7 +116,7 @@ require "settings/init.php";
     </div>
 </div>
 <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Brug for hjælp?</h1>

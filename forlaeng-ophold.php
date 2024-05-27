@@ -4,7 +4,7 @@ require "settings/init.php";
 if (!empty($_POST["data"])) {
     $data = $_POST["data"];
 
-    $sql = "INSERT INTO golfbooking (fDag, fPerson, fNavn, fMail, fCom) VALUES(:fDag, :fPerson, :fNavn, :fMail, :fCom)";
+    $sql = "INSERT INTO forlaengophold (fDag, fPerson, fNavn, fMail, fCom) VALUES(:fDag, :fPerson, :fNavn, :fMail, :fCom)";
     $bind = [":fDag" => $data["fDag"], ":fPerson" => $data["fPerson"], ":fNavn" => $data["fNavn"], ":fMail" => $data["fMail"], ":fCom" => $data["fCom"]];
 
     $db->sql($sql, $bind, false);
@@ -47,22 +47,21 @@ if (!empty($_POST["data"])) {
             </div>
             <div class="col-12 rounded-3 bg-kasse mt-2 p-3">
                 <p class="text-hvid">
-                    Både hotellet og golfbanen ligger i naturskønne omgivelser med udsigt over fjorden, og derfor er en
-                    tur på golfbanen hos os særligt attraktivt.
-                    Holbæk Golfklub ligger blot 10 minutter fra vores hotel, så når du har spist dig mæt i vores lækre
-                    morgenmadsbuffet, er der ikke langt til, at du står på banen.
+                    Brug for at mærke ‘The joy of missing out’ lidt flere dage? Så vælg til hvilken dato du vil blive
+                    her! Ved at forlænge opholdet er det kun inklusiv overnatning.
+                <p class="fst-italic text-hvid"> Priser varierer. Betal i receptionen.<p>
                 </p>
             </div>
         </div>
         <div class="col-6">
             <div class="bg-kasse rounded-3 mx-5 p-1 text-hvid text-center fs-1 overskrift fw-semibold">
-                Ledige tider
+                Vælg til dato
             </div>
 
             <form action="forlaeng-ophold.php?bestil=1" method="post">
                 <div>
                     <div class="mt-2">
-                        <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-5 text-hvid"
+                        <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-0 text-hvid"
                              id="time-buttons">
                         </div>
                     </div>
@@ -109,7 +108,7 @@ if (!empty($_POST["data"])) {
 
     </div>
 </div>
-<?php include "bestilmodal.php"?>
+<?php include "bestilmodal.php" ?>
 <script src="bestilmodal.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script>
