@@ -63,7 +63,7 @@ require "settings/init.php";
 </div>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <p class="modal-title fs-6" id="exampleModalLabel">Arrangementer der foregår på Hotel Strandparken</p>
@@ -116,7 +116,7 @@ require "settings/init.php";
     </div>
 </div>
 <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Brug for hjælp?</h1>
