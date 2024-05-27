@@ -68,15 +68,14 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                English
-                Suomi
-                Svenska
-                Deutch
-                Etc.
+                <a href="" class="link-navbar">Dansk</a> <br>
+                <a href="" class="link-navbar">English</a> <br>
+                <a href="" class="link-navbar">Deutsch</a> <br>
+                <a href="" class="link-navbar">Svenska</a> <br>
+                <a href="" class="link-navbar">Suomi</a>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-navbar" data-bs-dismiss="modal">Luk</button>
             </div>
         </div>
     </div>
@@ -89,11 +88,14 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                Her på skærmen kan du vælge...
+                Her på skærmen kan du vælge det, du har lyst til at lave lige idag <br>
+                Kontakt: <br>
+                Tlf: +45 59 43 06 16
+                Adresse: Kalundborgvej 58, 4300 Holbæk
+                Mail: hotelstrandparken@vilcon.dk
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-navbar" data-bs-dismiss="modal">Luk</button>
             </div>
         </div>
     </div>
@@ -106,12 +108,12 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                Tilkald medarbejder?
-                FAQ
+                <a href="" class="link-navbar">How to change language</a> <br>
+                <a href="" class="link-navbar">FAQ</a> <br>
+                <a href="" class="link-navbar">Tilkald en medarbejder</a> <br>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-navbar" data-bs-dismiss="modal">Luk</button>
             </div>
         </div>
     </div>
