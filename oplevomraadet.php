@@ -89,9 +89,9 @@ require "settings/init.php";
                             <div class="col-6">
                                 <div class="ps-3 pt-4">
                                     <p class="fs-1 overskrift fw-medium">Museum Vestsjælland</p>
-                                    <p>På Holbæk museum kan man både se særudstillinger og faste udstillinger. Derudover er der arrangementer man kan tilmede
-                                        <br>sig til på deres hjemmeside.
-                                        <br>Find flere informationer på hvad man kan opleve på:</p>
+                                    <p>På Holbæk museum kan man både se særudstillinger og faste udstillinger.
+                                        Derudover er der arrangementer man kan tilmede sig til på deres hjemmeside.
+                                        Find flere informationer på hvad man kan opleve på:</p>
                                         <p class="fst-italic">www.vestmuseum.dk/holbaek-museum/</p>
                                     <p>Entré pris: 60 kr </p>
                                     <div class="d-flex justify-content-start align-items-start">
