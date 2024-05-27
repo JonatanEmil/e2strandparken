@@ -38,6 +38,12 @@ require "settings/init.php";
 
 
         <div class="col-6">
+            <div class="d-flex justify-content-end m-2">
+                <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#sprogModal"><i class="sprog fa-solid fa-globe"></i></button>
+                <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#infoModal"><i class="info fa-solid fa-circle-info"></i></button>
+                <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#helpModal"><i class="FAQ fa-solid fa-circle-question"></i></button>
+                <a href="index.php"><img src="img/skaermlogo.webp" style="width: 45px; height: 45px;" class="p-1"></a>
+            </div>
             <div class="position-relative"> <!-- position-relative: Denne plads er stadig gemt i dokumentet. Dens children er positioneret relativt til dette element nu med css.-->
                 <img class="img-fluid" src="img/diamant.webp" alt=""> <!-- billede som baggrund pga svært at hardcode diamanterne -->
                 <div class="row position-absolute d-flex justify-content-center dtext text-center"> <!-- postion-absolute: Denne plads er ikke gemt (ligesom et overlay). d-text er vores egen klasse (se styles.scss) -->
