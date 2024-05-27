@@ -21,9 +21,8 @@ require "settings/init.php";
 
 <br>
 <div class="container">
-    <div class="row">
         <div class="row pb-4 border-bottom border-2 border-kasse" >
-            <div class="col ps-5">
+            <div class="col ps-4">
                 <img class="rounded-2" src="img/tur.webp" height="300">
             </div>
             <div class="col">
@@ -36,10 +35,7 @@ require "settings/init.php";
                 </div>
             </div>
         </div>
-    </div>
     <br><br>
-    <div class="container">
-        <div class="row">
             <div class="row pb-4 border-bottom border-2 border-kasse">
                 <div class="col">
                     <div class=" ps-4 pt-4">
@@ -53,10 +49,7 @@ require "settings/init.php";
                     <img class="rounded-2" src="img/tree.webp" height="300">
                 </div>
             </div>
-        </div>
         <br><br>
-        <div class="container">
-            <div class="row">
                 <div class="row pb-4 border-bottom border-2 border-kasse">
                     <div class="col ps-4">
                         <img class="rounded-2" src="img/golf2.webp" height="300">
@@ -73,12 +66,9 @@ require "settings/init.php";
                         </div>
                     </div>
                 </div>
-            </div>
             <br><br>
-            <div class="container">
-                <div class="row">
                     <div class="row pb-4 border-bottom border-2 border-kasse">
-                    <div class="col pt-4">
+                    <div class="col ps-4 pt-4">
                         <p class="fs-1 overskrift fw-medium ">Holbæk havn</p>
                         <p> Et kort stykke fra hotellet ligger Holbæk havn, som skaber liv til byen. Her kan man tage ned og spise en lækker is. Derudover er det tæt på centrum,
                             hvor der er shopping muligheder samt restaurenter og cafeer. </p>
@@ -91,12 +81,10 @@ require "settings/init.php";
                         <img class="rounded-2" src="img/havn.webp" height="300">
                     </div>
                 </div>
-                </div>
                 <br><br>
-                <div class="container">
                     <div class="row">
-                            <div class="col-6 bg-primary">
-                                <img class="rounded-2" src="img/museum.webp" height="300">
+                            <div class="col-6">
+                                <img class="rounded-2 img-fluid" src="img/museum.webp" alt="" height="300">
                             </div>
                             <div class="col-6">
                                 <div class="ps-3 pt-4">
@@ -114,7 +102,7 @@ require "settings/init.php";
                             </div>
                     </div>
                         <br>
-
+</div>
 
                 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
