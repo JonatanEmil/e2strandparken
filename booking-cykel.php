@@ -44,7 +44,8 @@ if (!empty($_POST["data"])) {
                 <p class="text-hvid">
                     Hotellet ligger i naturskønne omgivelser og et stenkast fra hotellet ligger der en sti langsvandet
                     som man kan cykle en god tur på. Stien fører bl.a ned i havnen eller man kan cykle ind til byen.
-                    Betal når du henter nøgle i receptionen.
+
+                    <p class="text-hvid"> Betal når du henter nøgle i receptionen.</p>
                 <p class="fst-italic text-hvid">Pris 30 kr. for 24 timer.<p>
                 </p>
             </div>

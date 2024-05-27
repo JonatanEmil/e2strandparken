@@ -38,7 +38,7 @@ require "settings/init.php";
 
 
         <div class="col-6">
-            <div class="d-flex justify-content-end m-2">
+            <div class="d-flex justify-content-end">
                 <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#sprogModal"><i class="sprog fa-solid fa-globe"></i></button>
                 <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#infoModal"><i class="info fa-solid fa-circle-info"></i></button>
                 <button class="btn btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#helpModal"><i class="FAQ fa-solid fa-circle-question"></i></button>
