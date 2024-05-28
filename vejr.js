@@ -33,7 +33,7 @@ setInterval(weather, 3600000)
 function getWeatherIcon(code) {
     switch (code) {
         case 0:
-            return "0.png";
+            return "0.svg";
         case 1:
         case 2:
         case 3:
@@ -51,7 +51,7 @@ function getWeatherIcon(code) {
         case 61:
         case 63:
         case 65:
-            return "61-63-65.png";
+            return "61-63-65.svg";
         case 66:
         case 67:
             return "66-67.svg";
