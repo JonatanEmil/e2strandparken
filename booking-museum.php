@@ -55,7 +55,7 @@ if (!empty($_POST["data"])) {
                      alt="Billede af to kvinder der kigger på kunst"
                      style="height: 400px; width: 100%; object-position: 50% 25%;">
             </div>
-            <div class="col-12 rounded-3 bg-kasse mt-2 p-3">
+            <div class="col-12 rounded-3 bg-kasse mt-2 p-3 pb-1">
                 <p class="text-hvid">
                     På museum Vestsjælland er der forskellige udstillinger og arrangementer man kan melde sig til.
                     Museet ligger blot 21 minutter væk på gåben eller 5 minutter i bil.

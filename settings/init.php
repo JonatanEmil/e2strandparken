@@ -9,14 +9,14 @@ define("CONFIG_LIVE", "0"); // 0: Test enviroment || 1: Live enviroment
 
 if(CONFIG_LIVE == 0){
 
+
     $DB_SERVER = "localhost";
     $DB_NAME = "strandparkscreen";
     $DB_USER = "root";
     $DB_PASS = "root";
-
-/*
+ /*
     $DB_SERVER = "mysql5.unoeuro.com";
-    $DB_NAME = "glaw_dk_db_e2Strandparken";
+    $DB_NAME = "glaw_dk_db_strandparkscreen";
     $DB_USER = "glaw_dk";
     $DB_PASS = "ramgcyekdt93RfzwDAE6";
 */

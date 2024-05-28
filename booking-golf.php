@@ -45,7 +45,7 @@ if (!empty($_POST["data"])) {
                 <img class="rounded-3 object-fit-cover " src="img/golf.webp" alt="Billede af to der spiller golf"
                      style="height: 400px; width: 100%; object-position: 50% 25%;">
             </div>
-            <div class="col-12 rounded-3 bg-kasse mt-2 pt-3 pe-3 ps-3 pb-2">
+            <div class="col-12 rounded-3 bg-kasse mt-2 pt-3 pe-3 ps-3 pb-1">
                 <p class="text-hvid">
                     Både hotellet og golfbanen ligger i naturskønne omgivelser med udsigt over fjorden, og derfor er en
                     tur på golfbanen hos os særligt attraktivt.
