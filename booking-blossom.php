@@ -95,7 +95,7 @@ if (!empty($_POST["data"])) {
 
 
                     <div class="d-flex justify-content-center mt-2 me-2">
-                        <input class="btn btn-text fs-3 mt-2 justify-content-center px-5" type="submit" value="Bestil">
+                        <input class="btn btn-text fs-3 mt-2 justify-content-center px-5" type="submit" value="Book">
                     </div>
 
                 </div>
