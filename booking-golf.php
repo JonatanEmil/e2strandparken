@@ -60,7 +60,7 @@ if (!empty($_POST["data"])) {
                 Ledige tider
             </div>
 
-            <form action="booking-golf.php?navn=Book Golf&bestil=1" method="post">
+            <form action="booking-golf.php?navn=Book golf&bestil=1" method="post">
                 <div>
                     <div class="mt-2">
                         <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-0 text-hvid"

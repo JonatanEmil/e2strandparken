@@ -69,7 +69,7 @@ if (!empty($_POST["data"])) {
                 Vælg til dato
             </div>
 
-            <form action="forlaeng-ophold.php?navn=Forlæng Ophold&bestil=1" method="post">
+            <form action="forlaeng-ophold.php?navn=Forlæng ophold&bestil=1" method="post">
                 <div>
                     <div class="mt-2">
                         <div class="row g-2 text-center d-flex justify-content-center mt-2 mx-0 text-hvid"
