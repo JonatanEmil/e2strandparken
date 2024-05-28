@@ -201,7 +201,7 @@ if (!empty($_POST["data"])) { //hvis vores post med data ikke er tom
 
             </div>
 
-            <form action="roomservice.php?bestil=1" method="post">
+            <form action="roomservice.php?navn=Bestil Roomservice&bestil=1" method="post">
             <div class="mt-4 pt-1 ms-2 overskrift text-hvid fs-6 fw-semibold">
                 <label for="rsRoom" class="form-label">Værelsesnummer</label>
                 <input type="number" class="form-control" id="rsRoom" name="data[rsRoom]" placeholder="">
