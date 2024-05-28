@@ -4,13 +4,22 @@ require "settings/init.php";
 if (!empty($_POST["data"])) {
     $data = $_POST["data"];
 
+    $year = date("Y");
+    $dato =  $data ["mDag"]; // Eksempel på dato i formatet dd-mm
+
+// Split datoen op i dag og måned
+    list($day, $month) = explode('/', $dato);
+
+// Sammensæt år, måned og dag til formatet YYYY-mm-dd
+    $newDate = sprintf('%04d-%02d-%02d', $year, $month, $day);
+
+    $data ["mDag"] = $newDate; // Udskrift: 2024-05-21
+
     $sql = "INSERT INTO museum (mDag, mPerson, mNavn, mMail) VALUES(:mDag, :mPerson, :mNavn, :mMail)";
     $bind = [":mDag" => $data["mDag"], ":mPerson" => $data["mPerson"], ":mNavn" => $data["mNavn"], ":mMail" => $data["mMail"]];
 
     $db->sql($sql, $bind, false);
 
-    echo "Din tid er nu Booket. <a href='booking-museum.php'>Book en tid mere <a/>";
-    exit;
 }
 ?>
 
@@ -71,8 +80,8 @@ if (!empty($_POST["data"])) {
                 <div class="col-9 ms-5">
                     <input type="hidden" id="mDag" name="data[mDag]">
                     <div class="mt-3 ms-2 overskrift text-hvid fs-6 fw-semibold">
-                        <label for="gPersons" class="form-label">Antal personer</label>
-                        <input type="number" class="form-control" id="gPersons" name="data[gPersons]" placeholder="">
+                        <label for="mPerson" class="form-label">Antal personer</label>
+                        <input type="number" class="form-control" id="mPerson" name="data[mPerson]" placeholder="">
 
                     </div>
 
@@ -115,7 +124,7 @@ if (!empty($_POST["data"])) {
     function formatDate(date) {
         const day = String(date.getDate()).padStart(2, '0');
         const month = String(date.getMonth() + 1).padStart(2, '0');
-        return `${day}-${month}`;
+        return `${day}/${month}`;
     }
 
     const today = new Date();
