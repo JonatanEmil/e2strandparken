@@ -19,13 +19,12 @@ require "settings/init.php";
 <body class="bg-baggrund text-text">
 <?php include "navbar.php"; ?>
 
-<br>
-<div class="container">
-    <div class="row pb-4 border-bottom border-2 border-kasse">
-        <div class="col ps-4">
-            <img class="rounded-2 object-fit-cover" src="img/tur.webp" height="300px" alt="Billede af en sti">
+<div class="container mt-3">
+    <div class="row pb-4 border-bottom border-2 border-kasse mb-3">
+        <div class="col-6 ps-4">
+            <img class="rounded-2 img-fluid" src="img/tur.webp" height="300px" alt="Billede af en sti">
         </div>
-        <div class="col">
+        <div class="col-6">
             <div class="pt-4">
                 <p class="fs-1 overskrift fw-medium">Gå en tur i naturen</p>
                 <p>I det naturskønne område kan man gå en dejlig tur langs stranden,
@@ -35,57 +34,52 @@ require "settings/init.php";
             </div>
         </div>
     </div>
-    <br><br>
-    <div class="row pb-4 border-bottom border-2 border-kasse">
-        <div class="col">
+    <div class="row pb-4 border-bottom border-2 border-kasse mb-3">
+        <div class="col-6">
             <div class=" ps-4 pt-4">
                 <p class="fs-1 overskrift fw-medium"> Lær træerne at kende</p>
-                <p class="me-3">Gå en tur i Strandparken, hvor i finder et bredt udvalg af træer.
-                    Find en brochure i lobbyen med information om alle de danske træer som i kan finde i området.
+                <p class="me-3">Gå en tur i Strandparken, hvor i finder et bredt udvalg af træer.<br>
+                    Find en brochure i lobbyen med information om alle de danske træer som i kan finde i området.<br>
                     Gå ud og bliv klogere!</p>
             </div>
         </div>
-        <div class="col me-4 d-flex justify-content-end">
-            <img class="rounded-2 object-fit-cover" src="img/tree.webp" height="300px" alt="Billeder af træer">
+        <div class="col-6 d-flex justify-content-end">
+            <img class="rounded-2 img-fluid" src="img/tree.webp" height="300px" alt="Billeder af træer">
         </div>
     </div>
-    <br><br>
-    <div class="row pb-4 border-bottom border-2 border-kasse">
-        <div class="col ps-4">
-            <img class="rounded-2 object-fit-cover" src="img/golf2.webp" height="300px" alt="Billede af en golfbane">
+    <div class="row pb-4 border-bottom border-2 border-kasse mb-3">
+        <div class="col-6 ps-4">
+            <img class="rounded-2 img-fluid" src="img/golf2.webp" height="300px" alt="Billede af en golfbane">
         </div>
-        <div class="col">
-            <div class="ps-3 pt-4 me-2">
+        <div class="col-6">
+            <div class="ps-3 pt-4">
                 <p class="fs-1 overskrift fw-medium">Tag ud og spil golf </p>
-                <p>Hvis i gerne vil ud og bevæge jer, kan i tage ud hen og spille golf på den nærlæggende golfbane.
+                <p>Hvis i gerne vil ud og bevæge jer, kan i tage ud hen og spille golf på den nærlæggende golfbane.<br>
                     Golfklubben er fra 1964, og består af en bane med 18 huller, 70 par.
                     <br><br> Priser fra 250 kr. Book en tid under “Book golf”.
                 <div class="d-flex justify-content-start align-items-start">
-                    <i class="fa-solid fa-car p-2"></i>
+                    <i class="fa-solid fa-car p-2 ps-0"></i>
                     <p class="pt-1">11 min</p>
                 </div>
             </div>
         </div>
     </div>
-    <br><br>
-    <div class="row pb-4 border-bottom border-2 border-kasse">
-        <div class="col ps-4 pt-4">
+    <div class="row pb-4 border-bottom border-2 border-kasse mb-3">
+        <div class="col-6 ps-4 pt-4">
             <p class="fs-1 overskrift fw-medium ">Holbæk havn</p>
-            <p> Et kort stykke fra hotellet ligger Holbæk havn, som skaber liv til byen. Her kan man tage ned og spise
-                en lækker is. Derudover er det tæt på centrum,
+            <p> Et kort stykke fra hotellet ligger Holbæk havn, som skaber liv til byen. <br> Her kan man tage ned og spise
+                en lækker is. <br> Derudover er det tæt på centrum,
                 hvor der er shopping muligheder samt restaurenter og cafeer. </p>
-            <br>
             <div class="d-flex justify-content-start align-items-start">
-                <i class="fa-solid fa-car p-2 "></i>
+                <i class="fa-solid fa-car p-2 ps-0"></i>
                 <p class="pt-1">4 min</p><i class="fa-solid fa-person-walking ms-5 p-2"></i>
                 <p class="pt-1">25 min</p>
             </div>
         </div>
-        <div class="col ps-5 me-4 d-flex justify-content-end">
+        <div class="col-6 ps-5 d-flex justify-content-end">
             <img class="rounded-2 object-fit-cover" src="img/havn.webp" height="300px" alt="Billede af en havn">
         </div>
     </div>
-    <br><br>
     <div class="row">
         <div class="col-6">
             <img class="rounded-2 object-fit-cover" src="img/museum.webp" alt="Billede af to kvinder af kigger på kunst"
@@ -108,7 +102,6 @@ require "settings/init.php";
             </div>
         </div>
     </div>
-    <br>
 </div>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
