@@ -75,7 +75,7 @@ require "settings/init.php";
     <br><br>
     <div class="row">
         <div class="col-6 pt-0">
-            <p class="fs-1 overskrift fw-medium ">Valentines dag</p>
+            <p class="fs-1 overskrift fw-medium ">Valentinesdag</p>
             <p>Gør Valentinsdag til en uforglemmelig begivenhed med et
                 ophold på Hotel Strandparken. Book jeres romantiske getaway
                 i dag og lad os sørge for, at I fejrer kærligheden på bedste vis.</p>
