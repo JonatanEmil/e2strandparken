@@ -131,8 +131,8 @@ if (!empty($_POST["data"])) {
 
     const now = new Date();
     const startTime = new Date();
-    startTime.setHours(17);
-    startTime.setMinutes(30);
+    startTime.setHours(9);
+    startTime.setMinutes(0);
     startTime.setSeconds(0);
 
     for (let i = 0; i < 12; i++) {
