@@ -18,7 +18,7 @@ if (!empty($_POST["data"])) { //hvis vores post med data ikke er tom
 
     <title>Hotel Strandparken</title>
 
-    <meta name="robots" content="All">
+    <meta name="robots" content="none">
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
 
