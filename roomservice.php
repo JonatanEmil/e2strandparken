@@ -1,7 +1,7 @@
 <?php
 require "settings/init.php";
 
-if (!empty($_POST["data"])) { //hvis vores post med data ikke er tom
+if (!empty($_POST["data"])) { //hvis vores post med data ikke er tom (!=ikke)
     $data = $_POST["data"]; //laver en variable af alt data i vores variable post bliver gemt i array'et
 
     $sql = "INSERT INTO roomservice (rsRoom, rsName, rsMail) VALUES(:rsRoom, :rsName, :rsMail)"; //indsæt :rsRoom, :rsName, :rsMail i table roomservice, i rsRoom, rsName og rsMail
