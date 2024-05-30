@@ -51,7 +51,7 @@ if (!empty($_POST["data"])) {
             </div>
         </div>
         <div class="col-6">
-            <div class="bg-kasse rounded-3 mx-5 p-1 text-hvid text-center fs-1 overskrift fw-semibold">
+            <div class="bg-kasse rounded-3 mx-5 p-1 text-hvid text-center fs-1 overskrift2 fw-medium">
                 Ledige tider
             </div>
 
@@ -66,28 +66,28 @@ if (!empty($_POST["data"])) {
 
                 <div class="col-9 ms-5">
                     <input type="hidden" id="cTid" name="data[cTid]">
-                    <div class="mt-3 ms-2 overskrift text-hvid fs-6 fw-semibold">
+                    <div class="mt-3 ms-2 overskrift2 text-hvid fs-6 fw-semibold">
                         <label for="cPerson" class="form-label">Antal personer</label>
                         <input type="number" class="form-control" id="cPerson" name="data[cPerson]" placeholder="">
 
                     </div>
 
-                    <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
+                    <div class="mt-2 ms-2 overskrift2 text-hvid fs-6 fw-semibold">
                         <label for="cNavn" class="form-label">Fulde navn</label>
                         <input type="text" class="form-control" id="cNavn" name="data[cNavn]" placeholder="">
                     </div>
 
-                    <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
+                    <div class="mt-2 ms-2 overskrift2 text-hvid fs-6 fw-semibold">
                         <label for="cMail" class="form-label">Email</label>
                         <input type="email" class="form-control" id="cMail" name="data[cMail]" placeholder="">
                     </div>
 
-                    <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
+                    <div class="mt-2 ms-2 overskrift2 text-hvid fs-6 fw-semibold">
                         <label for="cCom" class="form-label">Tilføj kommentar</label>
                         <input type="text" class="form-control" id="cCom" name="data[cCom]" placeholder="">
                     </div>
 
-                    <div class="form-check text-hvid overskrift fw-semibold fs-6 mt-4 ms-2 mb-1 fw-semibold">
+                    <div class="form-check text-hvid overskrift2 fw-semibold fs-6 mt-4 ms-2 mb-1 fw-semibold">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
                             Bekræft <a href="#" class="">handelsbetingelserne</a>
