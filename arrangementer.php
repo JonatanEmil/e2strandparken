@@ -27,7 +27,7 @@ require "settings/init.php";
         </div>
         <div class="col-6">
             <div class="pt-2">
-                <p class="fs-1 overskrift fw-medium">Vinsmagning</p>
+                <p class="fs-1 overskrift2 fw-medium">Vinsmagning</p>
                 <p>Træd ind i vinens verden og udforsk en mangfoldighed verden af smage og aromaer med vores eksklusive
                     vinsmagning.
                     <br>Perfekt for både nybegyndere og vinentusiaster!</p>
@@ -41,7 +41,7 @@ require "settings/init.php";
     <div class="row pb-4 border-bottom border-2 border-kasse">
         <div class="col-6">
             <div class=" ps-0 pt-1">
-                <p class="fs-1 overskrift fw-medium"> Flow Yoga</p>
+                <p class="fs-1 overskrift2 fw-medium"> Flow Yoga</p>
                 <p class="fs-5">For nybegyndere</p>
                 <p>Find ro, styrke og fleksibilitet med vores Flow Yoga for begyndere. <br>
                     Perfekt for dig, der vil starte yogarejsen i en støttende og afslappet atmosfære.
@@ -62,7 +62,7 @@ require "settings/init.php";
         </div>
         <div class="col-6 ps-4">
             <div class="ps-3 pt-1">
-                <p class="fs-1 overskrift fw-medium">Restaurant Blossom </p>
+                <p class="fs-1 overskrift2 fw-medium">Restaurant Blossom </p>
                 <p class="fs-5">Tester ny menu</p>
                 <p>Kom og smag vores spændende nye menu hos Restaurant Blossom!
                     Vi har nøje udvalgt friske ingredienser og innovative retter, der vil forkæle dine
@@ -75,7 +75,7 @@ require "settings/init.php";
     <br><br>
     <div class="row">
         <div class="col-6 pt-0">
-            <p class="fs-1 overskrift fw-medium ">Valentinesdag</p>
+            <p class="fs-1 overskrift2 fw-medium ">Valentinesdag</p>
             <p>Gør Valentinsdag til en uforglemmelig begivenhed med et
                 ophold på Hotel Strandparken. Book jeres romantiske getaway
                 i dag og lad os sørge for, at I fejrer kærligheden på bedste vis.</p>

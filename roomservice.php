@@ -68,7 +68,7 @@ if (!empty($_POST["data"])) { //hvis vores post med data ikke er tom (!=ikke)
                     $typeName = "Unknown Type"; // Default value in case there are no drinks
                 }
                 ?>
-                <p class="fs-3 text-hvid text-center overskrift pt-2 mb-0"><?php echo $typeName; ?></p>
+                <p class="fs-3 text-hvid text-center overskrift2 pt-2 mb-0"><?php echo $typeName; ?></p>
 
                 <div class=" p-3 pb-1 ">
                     <?php foreach ($drinks as $drink) { ?>
@@ -108,7 +108,7 @@ if (!empty($_POST["data"])) { //hvis vores post med data ikke er tom (!=ikke)
                     $typeName = "Unknown Type"; // Default value in case there are no drinks
                 }
                 ?>
-                <p class="fs-3 text-hvid text-center overskrift pt-2 mb-0"><?php echo $typeName; ?></p>
+                <p class="fs-3 text-hvid text-center overskrift2 pt-2 mb-0"><?php echo $typeName; ?></p>
 
                 <div class=" p-3">
                     <?php foreach ($drinks as $drink) { ?>
@@ -142,7 +142,7 @@ if (!empty($_POST["data"])) { //hvis vores post med data ikke er tom (!=ikke)
                     $typeName = "Unknown Type"; // Default value in case there are no drinks
                 }
                 ?>
-                <p class="fs-3 text-hvid text-center overskrift pt-2 mb-0"><?php echo $typeName; ?></p>
+                <p class="fs-3 text-hvid text-center overskrift2 pt-2 mb-0"><?php echo $typeName; ?></p>
 
                 <div class=" p-3 pb-3 ">
                     <?php foreach ($drinks as $drink) { ?>
@@ -178,7 +178,7 @@ if (!empty($_POST["data"])) { //hvis vores post med data ikke er tom (!=ikke)
                     $typeName = "Unknown Type"; // Default value in case there are no drinks
                 }
                 ?>
-                <p class="fs-3 text-hvid text-center overskrift pt-2 mb-0"><?php echo $typeName; ?></p>
+                <p class="fs-3 text-hvid text-center overskrift2 pt-2 mb-0"><?php echo $typeName; ?></p>
 
                 <div class=" p-3">
                     <?php foreach ($drinks as $drink) { ?>
@@ -202,23 +202,23 @@ if (!empty($_POST["data"])) { //hvis vores post med data ikke er tom (!=ikke)
             </div>
 
             <form action="roomservice.php?navn=Bestil roomservice&bestil=1" method="post">
-            <div class="mt-4 pt-1 ms-2 overskrift text-hvid fs-6 fw-semibold">
+            <div class="mt-4 pt-1 ms-2 overskrift2 text-hvid fs-6 fw-semibold">
                 <label for="rsRoom" class="form-label">Værelsesnummer</label>
                 <input type="number" class="form-control" id="rsRoom" name="data[rsRoom]" placeholder="">
 
             </div>
 
-            <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
+            <div class="mt-2 ms-2 overskrift2 text-hvid fs-6 fw-semibold">
                 <label for="rsName" class="form-label">Fulde navn</label>
                 <input type="text" class="form-control" id="rsName" name="data[rsName]" placeholder="">
             </div>
 
-            <div class="mt-2 ms-2 overskrift text-hvid fs-6 fw-semibold">
+            <div class="mt-2 ms-2 overskrift2 text-hvid fs-6 fw-semibold">
                 <label for="rsMail" class="form-label">Email</label>
                 <input type="email" class="form-control" id="rsMail" name="data[rsMail]" placeholder="">
             </div>
 
-            <div class="form-check text-hvid overskrift fw-semibold fs-6 mt-4 ms-2 mb-1 fw-semibold">
+            <div class="form-check text-hvid overskrift2 fw-semibold fs-6 mt-4 ms-2 mb-1 fw-semibold">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
                     Bekræft <a href="#" class="">handelsbetingelserne</a>
