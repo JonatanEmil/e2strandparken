@@ -116,7 +116,7 @@ if (!empty($_POST["data"])) {
         return String(num).padStart(2, '0');
     }
 
-    function getNextQuarterHour(date) {
+    function getNextHalfHour(date) {
         const minutes = date.getMinutes();
         const nextQuarterHour = Math.ceil(minutes / 30) * 30;
         if (nextQuarterHour === 60) {
@@ -130,10 +130,14 @@ if (!empty($_POST["data"])) {
     }
 
     const now = new Date();
-    const startTime = new Date();
-    startTime.setHours(9);
-    startTime.setMinutes(0);
-    startTime.setSeconds(0);
+    let startTime;
+
+    if (now.getHours() < 9) {
+        startTime = new Date();
+        startTime.setHours(9, 0, 0, 0);
+    } else {
+        startTime = getNextHalfHour(new Date());
+    }
 
     for (let i = 0; i < 12; i++) {
         //if (){
