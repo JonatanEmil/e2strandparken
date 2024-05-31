@@ -29,8 +29,7 @@ require "settings/init.php";
                 <p class="fs-1 overskrift2 fw-medium">Gå en tur i naturen</p>
                 <p>I det naturskønne område kan man gå en dejlig tur langs stranden,
                     som ligger et stenkast fra hotellet. <br> Det ville også være muligt at tage
-                    et dyb i vandet, hvis man er til det. <br> <br> Her vil der være mulighed for at
-                    finde flotte muslingeskaller, som er vasket ind med bølgerne. </p>
+                    et dyb i vandet, hvis vejret er til det. <br> <br> Fra hotellet er der flot udsigt til parken, Strandparken. </p>
             </div>
         </div>
     </div>
@@ -54,7 +53,7 @@ require "settings/init.php";
         <div class="col-6">
             <div class="ps-3 pt-4">
                 <p class="fs-1 overskrift2 fw-medium">Tag ud og spil golf </p>
-                <p class="ps-1">Hvis i gerne vil ud og bevæge jer, kan i tage ud hen og spille golf på den nærlæggende golfbane.<br>
+                <p class="ps-1">Hvis i gerne vil ud og bevæge jer, kan i tage hen og spille golf på den nærlæggende golfbane.<br>
                     Golfklubben er fra 1964, og består af en bane med 18 huller, 70 par.
                     <br><br> <p class="fst-italic"> Priser fra 250 kr. Book en tid under “Book golf”. </p> </p>
                 <div class="d-flex justify-content-start align-items-start ps-1">
@@ -69,7 +68,7 @@ require "settings/init.php";
             <p class="fs-1 overskrift2 fw-medium ">Holbæk havn</p>
             <p> Et kort stykke fra hotellet ligger Holbæk havn, som skaber liv til byen. Her kan man tage ned og spise
                 en lækker is. <br><br> Derudover er det tæt på centrum,
-                hvor der er shopping muligheder samt restaurenter og cafeer. </p>
+                hvor der er shoppingmuligheder samt restaurenter og cafeer. </p>
             <div class="d-flex justify-content-start align-items-start">
                 <i class="fa-solid fa-car p-2 ps-0"></i>
                 <p class="pt-1">4 min</p><i class="fa-solid fa-person-walking ms-5 p-2"></i>

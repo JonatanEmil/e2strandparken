@@ -9,7 +9,7 @@ if (!empty($_POST["data"])) {
 
     $db->sql($sql, $bind, false);
 
-   // echo "<a href='booking-golf.php'" + '?bestilling=1'+"><a/>";
+    // echo "<a href='booking-golf.php'" + '?bestilling=1'+"><a/>";
     //exit;
 }
 ?>
@@ -49,9 +49,11 @@ if (!empty($_POST["data"])) {
                 <p class="text-hvid">
                     Både hotellet og golfbanen ligger i naturskønne omgivelser med udsigt over fjorden, og derfor er en
                     tur på golfbanen hos os særligt attraktivt.
-                    Holbæk Golfklub ligger blot 10 minutter fra vores hotel, så når du har spist dig mæt i vores lækre
-                    morgenmadsbuffet, er der ikke langt til, at du står på banen. Betal når du møder op til din booking.
-                <p class="fst-italic text-hvid"> Priser fra 250 kr. <p>
+                    Når du har spist dig mæt i vores lækre morgenmadsbuffet, er der ikke langt til, at du står på banen.
+                    Holbæk Golfklub ligger nemlig kun 10 minutter fra vores hotel. Betal når du møder op til din
+                    booking.
+                <p class="fst-italic text-hvid"> Priser fra 250 kr.
+                <p>
                 </p>
             </div>
         </div>
@@ -106,7 +108,7 @@ if (!empty($_POST["data"])) {
 
     </div>
 </div>
-<?php include "bestilmodal.php"?>
+<?php include "bestilmodal.php" ?>
 <script src="bestilmodal.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script>

@@ -104,10 +104,10 @@ require "settings/init.php";
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                Her på skærmen kan du vælge det, du har lyst til at lave lige i dag <br>
+                Her på skærmen kan du vælge det, du har lyst til at lave lige i dag. <br>
                 Kontakt: <br>
-                Tlf: +45 59 43 06 16
-                Adresse: Kalundborgvej 58, 4300 Holbæk
+                Tlf: +45 59 43 06 16 <br>
+                Adresse: Kalundborgvej 58, 4300 Holbæk <br>
                 Mail: hotelstrandparken@vilcon.dk
             </div>
             <div class="modal-footer">

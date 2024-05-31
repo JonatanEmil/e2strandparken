@@ -66,7 +66,7 @@ if (!empty($_POST["data"])) {
         </div>
         <div class="col-6">
             <div class="bg-kasse rounded-3 mx-5 p-1 text-hvid text-center fs-1 overskrift2 fw-medium">
-                Vælg til dato
+                Ledige datoer
             </div>
 
             <form action="forlaeng-ophold.php?navn=Forlæng ophold&bestil=1" method="post">
