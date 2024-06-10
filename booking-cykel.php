@@ -151,7 +151,7 @@ if (!empty($_POST["data"])) {
         timeButtonsContainer.appendChild(button);
         startTime.setMinutes(startTime.getMinutes() + 15);
 
-        // Insert line break after every 4 buttons
+        // Insert line break after every 4 buttons // ikke nødvendigt pga colonner
         if ((i + 1) % 4 === 0) {
             timeButtonsContainer.appendChild(document.createElement('br'));
         }
